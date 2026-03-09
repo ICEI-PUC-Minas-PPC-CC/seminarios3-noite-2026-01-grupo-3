@@ -16,8 +16,8 @@
 
 | Campo | Informação |
 | ------- | ----------- |
-| Data | **(06/03/2026)** |
-| Forma de contato | **On-line** |
+| Data | **06/03/2026** |
+| Forma de contato | **Online** |
 | Participantes do grupo | **Luciano Expedito Franco, João Vitor Geraldo Parussolo e Brian Giaccon Vilela** |
 | Participantes da comunidade | **Turma/comunidade vinculada à Tarso de Coimbra e responsáveis pela atividade na PUC Minas** |
 | Objetivo do contato | **Realizar o primeiro contato com a comunidade, compreender o contexto da atividade e levantar demandas iniciais para definição do software a ser desenvolvido.** |
@@ -30,21 +30,23 @@ O grupo ficou responsável por consolidar a proposta inicial do sistema, registr
 
 ---
 
-### Contato #2
+## Próximos contatos planejados
+
+### Contato previsto #2
 
 | Campo | Informação |
 | ------- | ----------- |
-| Data | **(Vamos planejar)** |
+| Previsão | **A definir** |
 | Forma de contato | **Presencial** |
 | Participantes do grupo | **Luciano Expedito Franco, João Vitor Geraldo Parussolo e Brian Giaccon Vilela** |
 | Participantes da comunidade | **Representantes/participantes da comunidade parceira** |
 | Objetivo do contato | **Validar a proposta inicial do software e confirmar se a solução planejada atende às necessidades identificadas.** |
 
-**Resumo do que foi tratado:**  
-Neste contato, o grupo apresentou de forma resumida a ideia do sistema a ser desenvolvido: uma aplicação em Python com Streamlit para prática de soma, subtração, multiplicação e divisão. A proposta foi pensada para ser simples, acessível e funcional, permitindo ao usuário resolver exercícios, receber correção automática e acompanhar seu resultado. A solução foi considerada adequada por se tratar de um recurso educativo objetivo e de fácil utilização.
+**Planejamento:**  
+Neste próximo contato, o grupo pretende apresentar de forma resumida a ideia do sistema a ser desenvolvido: uma aplicação em Python com Streamlit para prática de soma, subtração, multiplicação e divisão. A proposta foi pensada para ser simples, acessível e funcional, permitindo ao usuário resolver exercícios, receber correção automática e acompanhar seu resultado.
 
-**Encaminhamentos:**  
-Ficou definido que o grupo seguiria com o detalhamento dos requisitos do sistema, priorizando simplicidade da interface, clareza das atividades e facilidade de uso.
+**Encaminhamento esperado:**  
+Validar a proposta com a comunidade e prosseguir com o detalhamento dos requisitos do sistema, priorizando simplicidade da interface, clareza das atividades e facilidade de uso.
 
 ---
 

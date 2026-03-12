@@ -7,7 +7,8 @@
 - [x] Enviado ao professor
 - [ ] Aprovado  
 
-> **Versão do termo .docx:** [baixar na atividade do Canvas]
+> **Versão do termo .docx:** [01-termo-autorizacao.docx](https://github.com/user-attachments/files/25936205/01-termo-autorizacao.docx)
+
 
 ---
 

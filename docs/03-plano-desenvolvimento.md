@@ -21,17 +21,18 @@
 | 1 | 18/02 à 25/02 | Formação do grupo | Todos | iniciado |
 | 2 | 26/02 à 04/03 | Contato com comunidade e levantamento de demandas | Todos | iniciado |
 | 3 | 05/03 à 11/03 | Definição de requisitos | Luciano, João Vitor e Brian | iniciado |
-| 4 | A definir | Prototipação / wireframes | João Vitor e Luciano | não iniciado |
-| 5 | A definir | Desenvolvimento — Sprint 1 | Brian e Luciano | não iniciado |
+| 4 | 12/03 à 18/03 | Prototipação / wireframes | João Vitor e Luciano | iniciado |
+| 5 | A definir | Apresentação do wireframe para validação/aprovação | Todos | não iniciado |
 | 6 | A definir | Desenvolvimento — Sprint 1 | Brian e Luciano | não iniciado |
-| 7 | A definir | Validação com a comunidade | Todos | não iniciado |
-| 8 | A definir | Desenvolvimento — Sprint 2 | Brian, João Vitor e Luciano | não iniciado |
+| 7 | A definir | Desenvolvimento — Sprint 1 | Brian e Luciano | não iniciado |
+| 8 | A definir | Validação com a comunidade/professor | Todos | não iniciado |
 | 9 | A definir | Desenvolvimento — Sprint 2 | Brian, João Vitor e Luciano | não iniciado |
-| 10 | A definir | Testes e ajustes | Todos | não iniciado |
-| 11 | A definir | Deploy / hospedagem | Luciano e Brian | não iniciado |
-| 12 | A definir | Validação final com a comunidade | Todos | não iniciado |
-| 13 | A definir | **Entrega presencial** | Todos | não iniciado |
-| 14 | A definir | Preenchimento dos relatórios APC | Todos | não iniciado |
+| 10 | A definir | Desenvolvimento — Sprint 2 | Brian, João Vitor e Luciano | não iniciado |
+| 11 | A definir | Testes e ajustes | Todos | não iniciado |
+| 12 | A definir | Deploy / hospedagem | Luciano e Brian | não iniciado |
+| 13 | A definir | Validação final com a comunidade | Todos | não iniciado |
+| 14 | A definir | **Entrega presencial** | Todos | não iniciado |
+| 15 | A definir | Preenchimento dos relatórios APC | Todos | não iniciado |
 
 > O cronograma será ajustado conforme o calendário da disciplina, disponibilidade da comunidade parceira e andamento do desenvolvimento.
 
@@ -41,7 +42,8 @@
 | ------- | :------------: | ---------------------- |
 | Demandas levantadas | 06/03/2026 | Registro de contato com a comunidade |
 | Requisitos definidos | 18/03/2026 | Documento `02-documento-requisitos.md` preenchido |
-| Protótipo aprovado | A definir | Wireframes validados com a comunidade |
+| Wireframes para validação de protótipo | 18/03/2026 | Wireframes validados com a comunidade |
+| Protótipo validado | A definir | Wireframes apresentados e aprovados pela comunidade e/ou professor |
 | MVP funcional | A definir | Funcionalidades mínimas operacionais |
 | Deploy realizado | A definir | Aplicação acessível pela Internet |
 | Entrega presencial | A definir | Software apresentado à comunidade |
@@ -51,7 +53,7 @@
 
 ### Ambiente de desenvolvimento
 
-O grupo utilizará **Python** com **Streamlit** para desenvolvimento da aplicação, **VS Code** como editor de código e **GitHub** para versionamento e organização do repositório. O código será mantido em um repositório compartilhado entre os integrantes, com atualizações frequentes conforme o avanço das tarefas.
+O grupo utilizará **Python** com **Streamlit** para desenvolvimento da aplicação, **VS Code** como editor de código e **GitHub** para versionamento e organização do repositório. Para a etapa de planejamento visual da interface, também foram utilizados **PowerPoint** e **Canva** na construção do wireframe de teste.
 
 ### Estratégia de testes
 
@@ -68,6 +70,7 @@ A aplicação será hospedada preferencialmente no **Streamlit Community Cloud**
 | Atraso no cronograma | Média | Alta | Manter escopo simples, priorizar funcionalidades essenciais e dividir tarefas de forma objetiva |
 | Dificuldade técnica inesperada | Média | Média | Utilizar tecnologias já conhecidas pelo grupo e buscar soluções simples para o MVP |
 | Comunidade indisponível para reuniões | Média | Média | Registrar contato prévio, manter flexibilidade de datas e alinhar com professor quando necessário |
+| Problemas de aprovação do protótipo | Média | Média | Ajustar wireframes rapidamente antes do início do desenvolvimento |
 | Problemas de infraestrutura no dia da entrega | Baixa | Alta | Levar versão local da aplicação e materiais de apoio para apresentação |
 
 ## 6. Comunicação do Grupo

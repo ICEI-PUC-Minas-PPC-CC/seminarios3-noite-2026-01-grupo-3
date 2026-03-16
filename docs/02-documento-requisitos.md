@@ -63,17 +63,23 @@ A proposta busca resolver a necessidade de uma ferramenta acessível, visual e d
 | Back-end (se houver) | Python |
 | Banco de dados (se houver) | Não se aplica nesta versão inicial |
 | Hospedagem | Streamlit Community Cloud |
-| Outras ferramentas | Git e GitHub |
+| Outras ferramentas | Git, GitHub, PowerPoint e Canva |
 
 ## 7. Protótipo / Wireframes
 
-O protótipo da aplicação será composto, inicialmente, por três telas principais:
+Foi elaborado um wireframe inicial de teste da aplicação, com o objetivo de representar visualmente a estrutura básica do sistema antes do desenvolvimento do código.
+
+O protótipo foi organizado em três telas principais:
 
 1. **Tela inicial**: apresentação da aplicação e botão para iniciar a atividade.  
 2. **Tela de exercícios**: exibição da operação matemática, campo de resposta e retorno visual de acerto ou erro.  
 3. **Tela de resultado**: exibição da quantidade de acertos, erros e opção de reiniciar a atividade.
 
-Os wireframes serão salvos em `evidencias/prints/`.
+Os wireframes foram montados para edição no **PowerPoint** e no **Canva**, servindo como base visual para a implementação da interface final do sistema.
+
+No momento, o wireframe encontra-se em fase de apresentação para validação e aprovação junto à comunidade parceira e/ou professor da disciplina.
+
+Os arquivos e imagens do protótipo poderão ser armazenados em `evidencias/prints/`.
 
 ## 8. Escopo Mínimo Viável (MVP)
 

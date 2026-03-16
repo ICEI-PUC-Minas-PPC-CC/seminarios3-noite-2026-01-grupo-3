@@ -20,14 +20,14 @@
 | :------: | ----------------------- | -------------------- | -----------: | :------: |
 | 1 | 18/02 à 25/02 | Formação do grupo | Todos | iniciado |
 | 2 | 26/02 à 04/03 | Contato com comunidade e levantamento de demandas | Todos | iniciado |
-| 3 | 05/03 à 11/03 | Definição de requisitos | Luciano, João Vitor e Brian | concluído |
+| 3 | 05/03 à 11/03 | Definição de requisitos | Todos | concluído |
 | 4 | 12/03 à 18/03 | Prototipação / wireframes | João Vitor e Luciano | concluído |
 | 5 | A definir | Apresentação do wireframe para validação/aprovação | Todos | não iniciado |
 | 6 | A definir | Desenvolvimento — Sprint 1 | Brian e Luciano | não iniciado |
 | 7 | A definir | Desenvolvimento — Sprint 1 | Brian e Luciano | não iniciado |
 | 8 | A definir | Validação com a comunidade/professor | Todos | não iniciado |
-| 9 | A definir | Desenvolvimento — Sprint 2 | Brian, João Vitor e Luciano | não iniciado |
-| 10 | A definir | Desenvolvimento — Sprint 2 | Brian, João Vitor e Luciano | não iniciado |
+| 9 | A definir | Desenvolvimento — Sprint 2 | Todos | não iniciado |
+| 10 | A definir | Desenvolvimento — Sprint 2 | Todos | não iniciado |
 | 11 | A definir | Testes e ajustes | Todos | não iniciado |
 | 12 | A definir | Deploy / hospedagem | Luciano e Brian | não iniciado |
 | 13 | A definir | Validação final com a comunidade | Todos | não iniciado |

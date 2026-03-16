@@ -26,7 +26,7 @@
 No primeiro contato, o grupo realizou a aproximação inicial com a comunidade parceira vinculada à Tarso de Coimbra, buscando compreender o contexto de aplicação do projeto extensionista. Foram discutidas possibilidades de desenvolvimento de um software simples, útil e viável para a realidade da disciplina e da comunidade atendida. A partir desse levantamento inicial, identificou-se como oportunidade a criação de uma aplicação educacional voltada para o reforço de operações matemáticas básicas, com foco em atividades objetivas, correção automática e interface simples.
 
 **Encaminhamentos:**  
-O grupo ficou responsável por consolidar a proposta inicial do sistema, registrar as demandas identificadas e estruturar um escopo enxuto para o desenvolvimento do protótipo.
+O grupo ficou responsável por consolidar a proposta inicial do sistema, registrar as demandas identificadas, estruturar um escopo enxuto e elaborar um wireframe de teste da aplicação para futura apresentação e validação.
 
 ---
 
@@ -39,14 +39,30 @@ O grupo ficou responsável por consolidar a proposta inicial do sistema, registr
 | Previsão | **A definir** |
 | Forma de contato | **Presencial** |
 | Participantes do grupo | **Luciano Expedito Franco, João Vitor Geraldo Parussolo e Brian Giaccon Vilela** |
-| Participantes da comunidade | **Representantes/participantes da comunidade parceira** |
-| Objetivo do contato | **Validar a proposta inicial do software e confirmar se a solução planejada atende às necessidades identificadas.** |
+| Participantes da comunidade | **Representantes/participantes da comunidade parceira e/ou professor da disciplina** |
+| Objetivo do contato | **Apresentar o wireframe de teste da aplicação, validar a proposta inicial do software e confirmar se a solução planejada atende às necessidades identificadas.** |
 
 **Planejamento:**  
-Neste próximo contato, o grupo pretende apresentar de forma resumida a ideia do sistema a ser desenvolvido: uma aplicação em Python com Streamlit para prática de soma, subtração, multiplicação e divisão. A proposta foi pensada para ser simples, acessível e funcional, permitindo ao usuário resolver exercícios, receber correção automática e acompanhar seu resultado.
+Neste próximo contato, o grupo pretende apresentar de forma resumida a ideia do sistema a ser desenvolvido: uma aplicação em Python com Streamlit para prática de soma, subtração, multiplicação e divisão. Também será apresentado o wireframe de teste da aplicação, elaborado para demonstrar a estrutura visual inicial do sistema, incluindo tela inicial, tela de exercícios e tela de resultado.
 
 **Encaminhamento esperado:**  
-Validar a proposta com a comunidade e prosseguir com o detalhamento dos requisitos do sistema, priorizando simplicidade da interface, clareza das atividades e facilidade de uso.
+Validar a proposta e o wireframe com a comunidade parceira e/ou professor, recolher sugestões de melhoria e prosseguir para a etapa de desenvolvimento da aplicação.
+
+---
+
+## Protótipo / Material de apoio para validação
+
+O grupo elaborou um wireframe de teste da aplicação com o objetivo de representar visualmente a estrutura inicial do sistema antes da implementação em código.
+
+### Arquivo do wireframe
+
+- **Apresentação em PowerPoint (.pptx):** `evidencias/prints/Wireframes_Grupo3_Matematica_Basica.pptx`
+
+> Substitua o caminho acima pelo local exato do arquivo dentro do repositório, caso ele seja movido de pasta.
+
+### Observação sobre a validação
+
+O wireframe foi criado e organizado para edição e apresentação. No momento, ele se encontra **em fase de encaminhamento para validação/aprovação** junto à comunidade parceira e/ou professor da disciplina.
 
 ---
 
@@ -55,13 +71,14 @@ Validar a proposta com a comunidade e prosseguir com o detalhamento dos requisit
 | # | Demanda | Prioridade | Como será atendida no software |
 | --- | --------- | :----------: | ------------------------------- |
 | 1 | Prática de operações matemáticas básicas | Alta | O sistema terá exercícios de soma, subtração, multiplicação e divisão. |
-| 2 | Interface simples e fácil de usar | Alta | A aplicação será desenvolvida com Streamlit, com navegação direta e layout objetivo. |
+| 2 | Interface simples e fácil de usar | Alta | A aplicação será desenvolvida com Streamlit, com navegação direta, layout objetivo e estrutura visual clara. |
 | 3 | Correção imediata das respostas | Alta | O usuário receberá correção automática ao responder os exercícios. |
 | 4 | Visualização do desempenho final | Média | O sistema mostrará quantidade de acertos, erros e resultado final da atividade. |
 | 5 | Recurso educativo acessível e funcional | Média | O projeto terá escopo enxuto, foco prático e possibilidade de uso em ambiente escolar. |
+| 6 | Interface visual e intuitiva | Alta | O sistema seguirá um wireframe simples, com telas organizadas, botões bem identificados e pouco texto. |
 
 ---
 
 ## Observação
 
-Este documento será atualizado ao longo do semestre, conforme novos contatos forem realizados com a comunidade parceira, incluindo validações do protótipo, sugestões de melhoria e registros da entrega final do software.
+Este documento será atualizado ao longo do semestre, conforme novos contatos forem realizados com a comunidade parceira, incluindo validações do protótipo, sugestões de melhoria, ajustes da aplicação e registros da entrega final do software.

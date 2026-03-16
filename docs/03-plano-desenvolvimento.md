@@ -17,11 +17,11 @@
 ## 2. Cronograma de Desenvolvimento
 
 | Semana | Período (dd/MM à dd/MM) | Atividade planejada | Responsável | Status |
-| :------: | --------- | -------------------- | -----------: | :------: |
+| :------: | ----------------------- | -------------------- | -----------: | :------: |
 | 1 | 18/02 à 25/02 | Formação do grupo | Todos | iniciado |
 | 2 | 26/02 à 04/03 | Contato com comunidade e levantamento de demandas | Todos | iniciado |
-| 3 | 05/03 à 11/03 | Definição de requisitos | Luciano, João Vitor e Brian | iniciado |
-| 4 | 12/03 à 18/03 | Prototipação / wireframes | João Vitor e Luciano | iniciado |
+| 3 | 05/03 à 11/03 | Definição de requisitos | Luciano, João Vitor e Brian | concluído |
+| 4 | 12/03 à 18/03 | Prototipação / wireframes | João Vitor e Luciano | concluído |
 | 5 | A definir | Apresentação do wireframe para validação/aprovação | Todos | não iniciado |
 | 6 | A definir | Desenvolvimento — Sprint 1 | Brian e Luciano | não iniciado |
 | 7 | A definir | Desenvolvimento — Sprint 1 | Brian e Luciano | não iniciado |
@@ -42,7 +42,7 @@
 | ------- | :------------: | ---------------------- |
 | Demandas levantadas | 06/03/2026 | Registro de contato com a comunidade |
 | Requisitos definidos | 18/03/2026 | Documento `02-documento-requisitos.md` preenchido |
-| Wireframes para validação de protótipo | 18/03/2026 | Wireframes validados com a comunidade |
+| Wireframes elaborados para validação | 18/03/2026 | Wireframes criados e organizados para apresentação |
 | Protótipo validado | A definir | Wireframes apresentados e aprovados pela comunidade e/ou professor |
 | MVP funcional | A definir | Funcionalidades mínimas operacionais |
 | Deploy realizado | A definir | Aplicação acessível pela Internet |

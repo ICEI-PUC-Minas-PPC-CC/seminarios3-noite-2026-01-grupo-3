@@ -56,9 +56,8 @@ O grupo elaborou um wireframe de teste da aplicação com o objetivo de represen
 
 ### Arquivo do wireframe
 
-- **Apresentação em PowerPoint (.pptx):** `evidencias/prints/Wireframes_Grupo3_Matematica_Basica.pptx`
+- **Apresentação em PowerPoint (.pdf):** [Wireframes - Grupo3.pdf](https://github.com/user-attachments/files/26030663/Wireframes.-.Grupo3.pdf)
 
-> Substitua o caminho acima pelo local exato do arquivo dentro do repositório, caso ele seja movido de pasta.
 
 ### Observação sobre a validação
 

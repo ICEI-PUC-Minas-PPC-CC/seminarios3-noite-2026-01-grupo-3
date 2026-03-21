@@ -53,15 +53,35 @@
 
 ### Ambiente de desenvolvimento
 
-O grupo utilizará **Python** com **Streamlit** para desenvolvimento da aplicação, **VS Code** como editor de código e **GitHub** para versionamento e organização do repositório. Para a etapa de planejamento visual da interface, também foram utilizados **PowerPoint** e **Canva** na construção do wireframe de teste.
+O desenvolvimento da aplicação será realizado utilizando a linguagem **Python** em conjunto com o framework **Streamlit**, escolhido pela sua simplicidade, rapidez de prototipação e adequação para aplicações interativas baseadas em navegador.
+
+O ambiente de codificação será o **Visual Studio Code (VS Code)**, permitindo organização eficiente do código, uso de extensões para produtividade e integração direta com o controle de versão.
+
+O versionamento e a gestão do projeto serão realizados por meio do **GitHub**, garantindo controle de alterações, histórico de commits, colaboração entre os integrantes e organização dos arquivos do projeto.
+
+Para a etapa de planejamento e definição da interface, foram utilizados **PowerPoint** e **Canva**, possibilitando a criação de wireframes visuais que servem como base para a implementação da interface final, priorizando acessibilidade e usabilidade.
 
 ### Estratégia de testes
 
-A aplicação será testada pelo próprio grupo ao longo do desenvolvimento, verificando o funcionamento correto das telas, da lógica das operações matemáticas, da correção automática das respostas e da exibição do resultado final. Também serão feitos ajustes com base em validações realizadas com a comunidade e/ou professor.
+Os testes serão conduzidos de forma contínua durante todo o processo de desenvolvimento, com foco em validação incremental das funcionalidades implementadas.
+
+Serão verificados principalmente:
+
+- Funcionamento correto da navegação entre telas
+- Exibição adequada dos exercícios matemáticos
+- Validação e correção automática das respostas
+- Feedback visual de acertos e erros
+- Cálculo e exibição do resultado final
+
+Além dos testes internos realizados pelo grupo, a aplicação também será validada com base no feedback da comunidade parceira e/ou do professor, permitindo ajustes práticos voltados à usabilidade, clareza visual e adequação ao público-alvo.
 
 ### Estratégia de deploy
 
-A aplicação será hospedada preferencialmente no **Streamlit Community Cloud**, permitindo acesso online por navegador. Caso necessário, o grupo também manterá uma versão local pronta para demonstração presencial.
+A aplicação será disponibilizada preferencialmente por meio do **Streamlit Community Cloud**, permitindo acesso remoto via navegador sem necessidade de instalação, facilitando a utilização pela comunidade.
+
+Como estratégia complementar, será mantida uma versão local totalmente funcional da aplicação, garantindo segurança para apresentações presenciais e mitigação de possíveis problemas de conexão ou disponibilidade da plataforma online.
+
+Essa abordagem híbrida assegura maior confiabilidade na entrega e flexibilidade na demonstração do sistema.
 
 ## 5. Riscos e Mitigações
 

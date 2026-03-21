@@ -12,6 +12,10 @@ A aplicação consiste em um sistema educacional simples, desenvolvido para auxi
 
 A proposta busca resolver a necessidade de uma ferramenta acessível, visual e de baixa complexidade para reforço de conteúdos de matemática básica, permitindo que o usuário resolva exercícios, receba correção automática e acompanhe seu desempenho ao final da atividade.
 
+A temática deste projeto será voltada ao uso do dinheiro no cotidiano, com foco em situações práticas como compras, pagamentos e cálculo de troco. Essa escolha foi definida a partir de uma demanda apresentada pela própria Diretora da Escola Municipal Doutor Tarso de Coimbra em uma reunião , que relatou dificuldades recorrentes dos alunos, em sua maioria com deficiência auditiva, na realização de transações simples do dia a dia.
+
+Dessa forma, o sistema educacional proposto buscará trabalhar conceitos matemáticos básicos aplicados ao contexto financeiro, de maneira visual, interativa e acessível, contribuindo não apenas para o desenvolvimento do raciocínio lógico, mas também para a autonomia dos estudantes em situações reais.
+
 ---
 
 ## 2. Público-Alvo

@@ -17,20 +17,30 @@
 Para executar a aplicação localmente, é necessário ter o Python instalado no computador.
 
 ```bash
-# 1. Clone o repositório
+## Como Executar Localmente
+
+Para executar a aplicação no computador, siga os passos abaixo:
+
+```bash
+# 1. Abra o Prompt de Comando (CMD) no Windows
+
+# 2. Acesse a pasta onde deseja baixar o projeto
+cd Downloads
+
+# 3. Clone o repositório do GitHub
 git clone https://github.com/ICEI-PUC-Minas-PPC-CC/seminarios3-noite-2026-01-grupo-3
 
-# 2. Acesse a pasta do projeto
+# 4. Acesse a pasta principal do projeto
 cd seminarios3-noite-2026-01-grupo-3
 
-# 3. Acesse a pasta src
+# 5. Acesse a pasta src, onde está o arquivo principal da aplicação
 cd src
 
-# 4. Instale as dependências
-pip install streamlit
+# 6. Instale o Streamlit, biblioteca necessária para executar a aplicação
+python -m pip install streamlit
 
-# 5. Execute a aplicação
-streamlit run app.py
+# 7. Execute a aplicação
+python -m streamlit run app.py
 ```
 
 ## Estrutura do Código

@@ -3,18 +3,22 @@ import sys
 import subprocess
 
 
-if os.environ.get("STREAMLIT_RUN_MODE") != "1":
-    os.environ["STREAMLIT_RUN_MODE"] = "1"
+def abrir_com_streamlit():
+    if os.environ.get("RODANDO_COM_STREAMLIT") != "1":
+        os.environ["RODANDO_COM_STREAMLIT"] = "1"
 
-    subprocess.run([
-        sys.executable,
-        "-m",
-        "streamlit",
-        "run",
-        os.path.abspath(__file__)
-    ])
+        subprocess.run([
+            sys.executable,
+            "-m",
+            "streamlit",
+            "run",
+            os.path.abspath(__file__)
+        ])
 
-    sys.exit()
+        sys.exit()
+
+
+abrir_com_streamlit()
 
 
 import random
@@ -40,35 +44,50 @@ def aplicar_estilo():
                 --bg-2: #eef3f8;
                 --card-bg: #ffffff;
                 --text-main: #111827;
-                --text-title: #1f2937;
-                --text-muted: #4b5563;
-                --border-color: #e5e7eb;
-                --shadow-color: rgba(15, 23, 42, 0.08);
+                --text-muted: #374151;
+                --border-color: #d1d5db;
+                --shadow-color: rgba(15, 23, 42, 0.10);
                 --button-bg: #ffffff;
+                --button-hover: #f3f4f6;
                 --button-text: #111827;
                 --input-bg: #ffffff;
                 --input-text: #111827;
+                --input-border: #9ca3af;
             }
 
             @media (prefers-color-scheme: dark) {
                 :root {
-                    --bg-1: #0f172a;
-                    --bg-2: #111827;
+                    --bg-1: #020617;
+                    --bg-2: #0f172a;
                     --card-bg: #1e293b;
-                    --text-main: #f9fafb;
-                    --text-title: #ffffff;
-                    --text-muted: #cbd5e1;
-                    --border-color: #475569;
-                    --shadow-color: rgba(0, 0, 0, 0.45);
+                    --text-main: #f8fafc;
+                    --text-muted: #e2e8f0;
+                    --border-color: #64748b;
+                    --shadow-color: rgba(0, 0, 0, 0.50);
                     --button-bg: #334155;
+                    --button-hover: #475569;
                     --button-text: #ffffff;
                     --input-bg: #0f172a;
                     --input-text: #ffffff;
+                    --input-border: #94a3b8;
                 }
             }
 
-            .stApp {
-                background: linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
+            html, body, .stApp {
+                background: linear-gradient(180deg, var(--bg-1), var(--bg-2)) !important;
+                color: var(--text-main) !important;
+            }
+
+            [data-testid="stAppViewContainer"] {
+                background: linear-gradient(180deg, var(--bg-1), var(--bg-2)) !important;
+                color: var(--text-main) !important;
+            }
+
+            [data-testid="stHeader"] {
+                background: transparent !important;
+            }
+
+            .block-container {
                 color: var(--text-main) !important;
             }
 
@@ -77,23 +96,11 @@ def aplicar_estilo():
                 color: var(--text-main) !important;
             }
 
-            [data-testid="stMarkdownContainer"] {
-                color: var(--text-main) !important;
-            }
-
-            [data-testid="stMarkdownContainer"] p,
-            [data-testid="stMarkdownContainer"] span,
-            [data-testid="stMarkdownContainer"] h1,
-            [data-testid="stMarkdownContainer"] h2,
-            [data-testid="stMarkdownContainer"] h3 {
-                color: var(--text-main) !important;
-            }
-
             .main-title {
                 text-align: center;
                 font-size: 2.4rem;
                 font-weight: 800;
-                color: var(--text-title) !important;
+                color: var(--text-main) !important;
                 margin-bottom: 0.2rem;
             }
 
@@ -107,19 +114,13 @@ def aplicar_estilo():
             .intro-card,
             .question-card,
             .result-card {
-                background: var(--card-bg);
+                background: var(--card-bg) !important;
                 color: var(--text-main) !important;
                 padding: 1.5rem;
                 border-radius: 18px;
                 box-shadow: 0 8px 24px var(--shadow-color);
                 border: 1px solid var(--border-color);
                 margin-bottom: 1.5rem;
-            }
-
-            .intro-card h3,
-            .result-card h3 {
-                color: var(--text-title) !important;
-                margin-top: 0;
             }
 
             .intro-card p,
@@ -137,7 +138,7 @@ def aplicar_estilo():
             .question-text {
                 font-size: 2rem;
                 font-weight: 800;
-                color: var(--text-title) !important;
+                color: var(--text-main) !important;
                 margin-bottom: 0.5rem;
             }
 
@@ -150,11 +151,18 @@ def aplicar_estilo():
                 background-color: var(--button-bg) !important;
                 color: var(--button-text) !important;
                 border-radius: 12px;
-                border: 1px solid var(--border-color);
+                border: 1px solid var(--border-color) !important;
                 padding: 0.75rem 1rem;
                 font-weight: 700;
                 transition: all 0.25s ease-in-out;
                 box-shadow: 0 4px 12px var(--shadow-color);
+            }
+
+            div.stButton > button:hover {
+                background-color: var(--button-hover) !important;
+                color: var(--button-text) !important;
+                transform: translateY(-2px);
+                box-shadow: 0 8px 18px var(--shadow-color);
             }
 
             div.stButton > button p,
@@ -162,18 +170,8 @@ def aplicar_estilo():
                 color: var(--button-text) !important;
             }
 
-            div.stButton > button:hover {
-                transform: translateY(-3px) scale(1.02);
-                box-shadow: 0 8px 18px var(--shadow-color);
-                border: 1px solid var(--text-muted);
-            }
-
-            div.stButton > button:active {
-                transform: translateY(0px) scale(0.98);
-            }
-
             [data-testid="stMetric"] {
-                background: var(--card-bg);
+                background: var(--card-bg) !important;
                 padding: 1rem;
                 border-radius: 16px;
                 border: 1px solid var(--border-color);
@@ -186,55 +184,28 @@ def aplicar_estilo():
                 color: var(--text-main) !important;
             }
 
-            [data-testid="stMetricValue"] {
-                color: var(--text-title) !important;
-            }
-
-            .footer-note {
-                text-align: center;
-                color: var(--text-muted) !important;
-                font-size: 0.9rem;
-                margin-top: 1.2rem;
-            }
-
             div[data-baseweb="select"] > div {
                 background-color: var(--input-bg) !important;
                 color: var(--input-text) !important;
-                border-color: var(--border-color) !important;
+                border: 1px solid var(--input-border) !important;
             }
 
-            div[data-baseweb="select"] span {
+            div[data-baseweb="select"] span,
+            div[data-baseweb="select"] div {
                 color: var(--input-text) !important;
             }
 
-            div[data-baseweb="popover"] {
-                background-color: var(--card-bg) !important;
-                color: var(--text-main) !important;
-            }
-
-            div[data-baseweb="option"] {
-                background-color: var(--card-bg) !important;
-                color: var(--text-main) !important;
-            }
-
-            div[data-baseweb="input"] input {
+            div[data-baseweb="input"] {
                 background-color: var(--input-bg) !important;
-                color: var(--input-text) !important;
             }
 
+            div[data-baseweb="input"] input,
             input {
-                color: var(--input-text) !important;
                 background-color: var(--input-bg) !important;
+                color: var(--input-text) !important;
             }
 
-            .stRadio label,
-            .stSelectbox label,
-            .stNumberInput label {
-                color: var(--text-main) !important;
-            }
-
-            .stRadio p,
-            .stRadio span {
+            [role="radiogroup"] label {
                 color: var(--text-main) !important;
             }
 
@@ -244,24 +215,26 @@ def aplicar_estilo():
                 border-radius: 12px;
             }
 
-            [data-testid="stExpander"] p,
-            [data-testid="stExpander"] span,
-            [data-testid="stExpander"] label {
-                color: var(--text-main) !important;
-            }
-
             [data-testid="stAlert"] p,
             [data-testid="stAlert"] span,
             [data-testid="stAlert"] div {
                 color: inherit !important;
             }
+
+            .footer-note {
+                text-align: center;
+                color: var(--text-muted) !important;
+                font-size: 0.9rem;
+                margin-top: 1.2rem;
+            }
         </style>
         """,
         unsafe_allow_html=True
     )
-    
+
+
 def iniciar_estado():
-    valores_iniciais = {
+    dados_iniciais = {
         "pagina": "inicio",
         "operacao": "Todas",
         "nivel": "Fácil",
@@ -275,13 +248,10 @@ def iniciar_estado():
         "modo_resposta": "alternativas",
         "respondido": False,
         "feedback_tipo": "",
-        "feedback_texto": "",
-        "resposta_radio": None,
-        "resposta_digitada": 0,
-        "mostrar_ajuda": False,
+        "feedback_texto": ""
     }
 
-    for chave, valor in valores_iniciais.items():
+    for chave, valor in dados_iniciais.items():
         if chave not in st.session_state:
             st.session_state[chave] = valor
 
@@ -294,19 +264,13 @@ def limpar_questao():
     st.session_state.respondido = False
     st.session_state.feedback_tipo = ""
     st.session_state.feedback_texto = ""
-    st.session_state.resposta_radio = None
-    st.session_state.resposta_digitada = 0
 
 
-def reiniciar_atividade():
+def voltar_tela_inicial():
     st.session_state.pagina = "inicio"
-    st.session_state.operacao = "Todas"
-    st.session_state.nivel = "Fácil"
     st.session_state.questao_atual = 1
-    st.session_state.total_questoes = TOTAL_QUESTOES
     st.session_state.pontuacao = 0
     st.session_state.erros = 0
-    st.session_state.mostrar_ajuda = False
     limpar_questao()
 
 
@@ -317,67 +281,63 @@ def iniciar_quiz(operacao, nivel):
     st.session_state.questao_atual = 1
     st.session_state.pontuacao = 0
     st.session_state.erros = 0
-    st.session_state.mostrar_ajuda = False
     limpar_questao()
 
 
 def escolher_operacao(operacao):
-    if operacao != "Todas":
-        return operacao
+    if operacao == "Todas":
+        return random.choice(["Soma", "Subtração", "Multiplicação", "Divisão"])
 
-    return random.choice(["Soma", "Subtração", "Multiplicação", "Divisão"])
+    return operacao
 
 
 def gerar_valores(operacao, nivel):
     if nivel == "Fácil":
         if operacao == "Soma":
-            a = random.randint(1, 10)
-            b = random.randint(1, 10)
-        elif operacao == "Subtração":
+            return random.randint(1, 10), random.randint(1, 10)
+
+        if operacao == "Subtração":
             a = random.randint(2, 20)
             b = random.randint(1, a)
-        elif operacao == "Multiplicação":
-            a = random.randint(1, 10)
-            b = random.randint(1, 10)
-        else:
-            b = random.randint(1, 10)
-            resultado = random.randint(1, 10)
-            a = b * resultado
+            return a, b
 
-        return a, b
+        if operacao == "Multiplicação":
+            return random.randint(1, 10), random.randint(1, 10)
+
+        b = random.randint(1, 10)
+        resultado = random.randint(1, 10)
+        return b * resultado, b
 
     if nivel == "Médio":
         if operacao == "Soma":
-            a = random.randint(10, 50)
-            b = random.randint(10, 50)
-        elif operacao == "Subtração":
+            return random.randint(10, 50), random.randint(10, 50)
+
+        if operacao == "Subtração":
             a = random.randint(20, 99)
             b = random.randint(10, a)
-        elif operacao == "Multiplicação":
-            a = random.randint(2, 12)
-            b = random.randint(2, 15)
-        else:
-            b = random.randint(2, 12)
-            resultado = random.randint(2, 15)
-            a = b * resultado
+            return a, b
 
-        return a, b
+        if operacao == "Multiplicação":
+            return random.randint(2, 12), random.randint(2, 15)
+
+        b = random.randint(2, 12)
+        resultado = random.randint(2, 15)
+        return b * resultado, b
 
     if operacao == "Soma":
-        a = random.randint(50, 200)
-        b = random.randint(50, 200)
-    elif operacao == "Subtração":
+        return random.randint(50, 200), random.randint(50, 200)
+
+    if operacao == "Subtração":
         a = random.randint(100, 300)
         b = random.randint(50, a)
-    elif operacao == "Multiplicação":
-        a = random.randint(10, 25)
-        b = random.randint(5, 20)
-    else:
-        b = random.randint(5, 20)
-        resultado = random.randint(10, 25)
-        a = b * resultado
+        return a, b
 
-    return a, b
+    if operacao == "Multiplicação":
+        return random.randint(10, 25), random.randint(5, 20)
+
+    b = random.randint(5, 20)
+    resultado = random.randint(10, 25)
+    return b * resultado, b
 
 
 def montar_enunciado_e_resposta(operacao, a, b):
@@ -397,22 +357,22 @@ def gerar_alternativas(resposta_correta):
     alternativas = {resposta_correta}
 
     while len(alternativas) < 4:
-        deslocamento = random.randint(-10, 10)
+        erro = random.randint(-10, 10)
 
-        if deslocamento == 0:
-            deslocamento = 1
+        if erro == 0:
+            erro = 1
 
-        alternativa = resposta_correta + deslocamento
+        alternativa = resposta_correta + erro
 
         if alternativa < 0:
             alternativa = abs(alternativa) + random.randint(1, 3)
 
         alternativas.add(alternativa)
 
-    lista = list(alternativas)
-    random.shuffle(lista)
+    alternativas = list(alternativas)
+    random.shuffle(alternativas)
 
-    return lista
+    return alternativas
 
 
 def gerar_questao():
@@ -431,20 +391,17 @@ def gerar_questao():
         st.session_state.alternativas = []
 
 
-def verificar_resposta():
-    if st.session_state.modo_resposta == "alternativas":
-        resposta_usuario = st.session_state.resposta_radio
+def verificar_resposta(resposta_usuario):
+    if resposta_usuario is None:
+        st.warning("Escolha uma resposta antes de continuar.")
+        return
 
-        if resposta_usuario is None:
-            st.warning("Selecione uma alternativa antes de responder.")
-            return
-    else:
-        resposta_usuario = int(st.session_state.resposta_digitada)
+    resposta_usuario = int(resposta_usuario)
 
     if resposta_usuario == st.session_state.resposta_correta:
         st.session_state.pontuacao += 1
         st.session_state.feedback_tipo = "success"
-        st.session_state.feedback_texto = "Resposta correta! Muito bem, continue para a próxima questão."
+        st.session_state.feedback_texto = "Resposta correta! Muito bem."
     else:
         st.session_state.erros += 1
         st.session_state.feedback_tipo = "error"
@@ -488,7 +445,7 @@ def tela_inicio():
             </p>
             <p>
                 Escolha a operação, selecione o nível de dificuldade e responda às questões.
-                Ao final, você verá seu desempenho com acertos, erros e aproveitamento.
+                Ao final, você verá seu desempenho.
             </p>
         </div>
         """,
@@ -508,29 +465,13 @@ def tela_inicio():
     )
 
     with st.expander("Entenda os níveis"):
-        st.write("**Fácil:** contas simples com alternativas para seleção.")
-        st.write("**Médio:** contas um pouco maiores com resposta digitada.")
-        st.write("**Difícil:** contas mais desafiadoras, mantendo as operações básicas.")
+        st.write("**Fácil:** contas simples com alternativas.")
+        st.write("**Médio:** contas maiores com resposta digitada.")
+        st.write("**Difícil:** contas mais desafiadoras com resposta digitada.")
 
-    col_a, col_b = st.columns(2)
-
-    with col_a:
-        if st.button("Iniciar atividade", use_container_width=True):
-            iniciar_quiz(operacao, nivel)
-            st.rerun()
-
-    with col_b:
-        if st.button("Como usar", use_container_width=True):
-            st.session_state.mostrar_ajuda = True
-            st.rerun()
-
-    if st.session_state.mostrar_ajuda:
-        st.markdown("### Como usar")
-        st.write("1. Escolha a operação matemática desejada.")
-        st.write("2. Selecione o nível de dificuldade.")
-        st.write("3. Clique em **Iniciar atividade**.")
-        st.write("4. Responda às 10 questões.")
-        st.write("5. Veja seu resultado final e refaça a atividade se quiser praticar novamente.")
+    if st.button("Iniciar atividade", use_container_width=True):
+        iniciar_quiz(operacao, nivel)
+        st.rerun()
 
     st.markdown(
         '<div class="footer-note">Projeto desenvolvido para apoio ao aprendizado de matemática básica.</div>',
@@ -559,39 +500,33 @@ def tela_quiz():
         f"""
         <div class="question-card">
             <div class="question-text">{st.session_state.enunciado}</div>
-            <div class="instruction-text">Leia a questão com atenção e informe sua resposta.</div>
+            <div class="instruction-text">Leia com atenção e informe sua resposta.</div>
         </div>
         """,
         unsafe_allow_html=True
     )
 
     if not st.session_state.respondido:
+        resposta_usuario = None
+
         if st.session_state.modo_resposta == "alternativas":
-            st.radio(
+            resposta_usuario = st.radio(
                 "Escolha uma alternativa:",
                 st.session_state.alternativas,
-                key="resposta_radio",
+                key=f"resposta_radio_{st.session_state.questao_atual}",
                 index=None
             )
         else:
-            st.number_input(
+            resposta_usuario = st.number_input(
                 "Digite sua resposta:",
                 step=1,
                 format="%d",
-                key="resposta_digitada"
+                key=f"resposta_digitada_{st.session_state.questao_atual}"
             )
 
-        col_a, col_b = st.columns(2)
-
-        with col_a:
-            if st.button("Responder", use_container_width=True):
-                verificar_resposta()
-                st.rerun()
-
-        with col_b:
-            if st.button("← Voltar", use_container_width=True):
-                reiniciar_atividade()
-                st.rerun()
+        if st.button("Responder", use_container_width=True):
+            verificar_resposta(resposta_usuario)
+            st.rerun()
 
     else:
         if st.session_state.feedback_tipo == "success":
@@ -599,17 +534,9 @@ def tela_quiz():
         else:
             st.error(st.session_state.feedback_texto)
 
-        col_a, col_b = st.columns(2)
-
-        with col_a:
-            if st.button("Próxima →", use_container_width=True):
-                avancar_questao()
-                st.rerun()
-
-        with col_b:
-            if st.button("← Voltar ao início", use_container_width=True):
-                reiniciar_atividade()
-                st.rerun()
+        if st.button("Próxima →", use_container_width=True):
+            avancar_questao()
+            st.rerun()
 
 
 def tela_resultado():
@@ -656,8 +583,8 @@ def tela_resultado():
             st.rerun()
 
     with col_b:
-        if st.button("Voltar ao início", use_container_width=True):
-            reiniciar_atividade()
+        if st.button("Voltar para tela inicial", use_container_width=True):
+            voltar_tela_inicial()
             st.rerun()
 
 
@@ -668,5 +595,5 @@ if st.session_state.pagina == "inicio":
     tela_inicio()
 elif st.session_state.pagina == "quiz":
     tela_quiz()
-else:
+elif st.session_state.pagina == "resultado":
     tela_resultado()

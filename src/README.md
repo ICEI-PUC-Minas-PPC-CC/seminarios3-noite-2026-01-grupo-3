@@ -1,6 +1,6 @@
 # 📂 Código-Fonte da Aplicação
 
-> Coloque aqui o código-fonte do software desenvolvido pelo grupo.
+> Este diretório contém o código-fonte do software desenvolvido pelo Grupo 3 para a disciplina de Seminários III.
 
 ---
 
@@ -8,37 +8,38 @@
 
 | Campo | Informação |
 |-------|-----------|
-| Nome da aplicação | *(preencher)* |
-| Tecnologias utilizadas | *(preencher)* |
-| URL em produção | *(preencher, se hospedado)* |
+| Nome da aplicação | Pratique Matemática Básica |
+| Tecnologias utilizadas | Python e Streamlit |
+| URL em produção | A definir / inserir link do deploy após hospedagem |
 
 ## Como Executar Localmente
 
-*(Descreva os passos para rodar a aplicação localmente.)*
+Para executar a aplicação localmente, é necessário ter o Python instalado no computador.
 
 ```bash
-# Exemplo:
 # 1. Clone o repositório
-git clone <url-do-repositorio>
+git clone https://github.com/ICEI-PUC-Minas-PPC-CC/seminarios3-noite-2026-01-grupo-3
 
-# 2. Instale as dependências
-npm install
+# 2. Acesse a pasta do projeto
+cd seminarios3-noite-2026-01-grupo-3
 
-# 3. Execute a aplicação
-npm start
+# 3. Acesse a pasta src
+cd src
+
+# 4. Instale as dependências
+pip install streamlit
+
+# 5. Execute a aplicação
+streamlit run app.py
 ```
 
 ## Estrutura do Código
 
 ```
 src/
-├── index.html
-├── style.css
-├── script.js
-└── ...
+├── README.md
+└── app.py
 ```
-
-*(Adapte conforme as tecnologias escolhidas pelo grupo.)*
 
 ## Deploy
 

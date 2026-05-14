@@ -39,21 +39,37 @@ O principal objetivo do projeto é oferecer um software educativo direto, funcio
 ## 📁 Estrutura do Repositório
 
 ```cmd
-├── README.md                              ← Este arquivo
+## Estrutura do Repositório
+
+├── README.md                                      ← Arquivo principal de apresentação do projeto
+├── .gitignore                                     ← Arquivo de configuração do Git
+├── LICENSE                                        ← Licença do repositório
 ├── docs/
-│   ├── 01-termo-autorizacao.md           ← Termo de autorização e agendamento
-│   ├── 02-documento-requisitos.md        ← Documento de requisitos do software
-│   ├── 03-plano-desenvolvimento.md       ← Plano e cronograma de desenvolvimento
-│   ├── 04-checklist-logistica.md         ← Checklist de preparação e logística
-│   ├── 05-diario-bordo.md                ← Diário de bordo do grupo
-│   └── 06-registro-contatos.md           ← Registro de contatos com a comunidade
-├── src/                                  ← Código-fonte da aplicação
-│   └── README.md                         ← Instruções de setup e execução
+│   ├── 01-termo-autorizacao.md                    ← Termo de autorização e agendamento
+│   ├── 02-documento-requisitos.md                 ← Documento de requisitos do software
+│   ├── 03-plano-desenvolvimento.md                ← Plano e cronograma de desenvolvimento
+│   ├── 04-checklist-logistica.md                  ← Checklist de preparação e logística
+│   ├── 05-diario-bordo.md                         ← Diário de bordo do grupo
+│   ├── 06-registro-contatos.md                    ← Registro de contatos com a comunidade
+│   ├── 08-plano-testes.md                         ← Plano de testes do MVP
+│   └── 09-relatorio-testes.md                     ← Relatório dos testes realizados
+├── src/                                           ← Código-fonte da aplicação
+│   ├── app.py                                     ← Aplicação principal em Python com Streamlit
+│   └── README.md                                  ← Instruções de setup, execução e deploy
 ├── evidencias/
-│   ├── fotos/                            ← Fotos da entrega presencial
-│   └── prints/                           ← Prints de tela da aplicação
+│   ├── fotos/                                     ← Fotos da entrega presencial, quando houver
+│   └── prints/                                    ← Prints de tela da aplicação
+│       ├── README.md                              ← Descrição das evidências visuais
+│       ├── pagina-inicio.png                      ← Tela inicial da aplicação
+│       ├── configuracoes-de-atividades.png        ← Tela de configuração da atividade
+│       ├── niveis.png                             ← Demonstração dos níveis de dificuldade
+│       ├── durante-a-atividade.png                ← Tela durante a resolução do quiz
+│       ├── acerto.png                             ← Exemplo de resposta correta
+│       ├── erro.png                               ← Exemplo de resposta incorreta
+│       ├── final-bom.png                          ← Resultado final com bom desempenho
+│       └── final-ruim.png                         ← Resultado final com baixo desempenho
 └── relatorios/
-    └── 07-relatorio-atividades.md        ← Base para o relatório APC (grupo)
+    └── 07-relatorio-atividades.md                 ← Base para o relatório APC do grupo
 ```
 
 ---

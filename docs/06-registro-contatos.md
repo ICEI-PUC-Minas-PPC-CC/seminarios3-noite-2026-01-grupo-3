@@ -97,7 +97,29 @@ Após o retorno do professor Harison, o grupo deverá:
 
 ---
 
-## 3. Materiais de Apoio para Validação
+### Contato #3 - Apresentação prévia do projeto
+
+| Campo | Informação |
+|---|---|
+| Data | 18/05/2026 |
+| Forma de contato | Visita à escola |
+| Participantes do grupo | Brian Giaccon Vilela — Grupo 3 |
+| Comunidade parceira | Centro Municipal de Educação Dr. Tarso de Coimbra |
+| Material mostrado | Demonstração da aplicação desenvolvida até o momento |
+| Duração aproximada | 40 minutos |
+| Objetivo do contato | Realizar uma primeira avaliação da aplicação e obter sugestões de melhoria |
+| Status | Realizado |
+
+### Detalhes do contato
+
+Foi realizada uma visita à escola para apresentar uma versão prévia da aplicação desenvolvida. A aplicação foi apresentada à diretora da escola e a dois alunos, para que pudessem testá-la e sugerir melhorias, alterações ou novos recursos que poderiam ser incluídos.
+
+### Sugestões feitas
+
+- Criação de um nível de dificuldade básico, com operações de soma e subtração utilizando números até 9 e apoio de imagens;
+- Inclusão de mais elementos visuais, como cédulas ilustrativas e GIFs.
+
+## 4. Materiais de Apoio para Validação
 
 | Material | Descrição | Situação |
 |---|---|---|
@@ -107,7 +129,7 @@ Após o retorno do professor Harison, o grupo deverá:
 
 ---
 
-## 4. Protótipo / Wireframe
+## 5. Protótipo / Wireframe
 
 O grupo elaborou um wireframe de teste da aplicação com o objetivo de representar visualmente a estrutura inicial do sistema antes da implementação em código.
 
@@ -123,7 +145,7 @@ O wireframe apresenta as principais telas planejadas para o MVP:
 
 ---
 
-## 5. Resumo das Demandas Identificadas
+## 6. Resumo das Demandas Identificadas
 
 | Nº | Demanda | Prioridade | Como será atendida no software |
 |---|---|:---:|---|
@@ -136,7 +158,7 @@ O wireframe apresenta as principais telas planejadas para o MVP:
 
 ---
 
-## 6. Próximos Passos
+## 7. Próximos Passos
 
 | Etapa | Descrição | Situação |
 |---|---|---|
@@ -148,7 +170,7 @@ O wireframe apresenta as principais telas planejadas para o MVP:
 
 ---
 
-## 7. Observação Final
+## 8. Observação Final
 
 Este documento será atualizado ao longo do semestre, conforme novos contatos forem realizados com a comunidade parceira.
 

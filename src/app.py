@@ -1,26 +1,5 @@
-import os
 import random
-import subprocess
-import sys
-
-
-def abrir_com_streamlit():
-    if os.environ.get("RODANDO_COM_STREAMLIT") != "1":
-        os.environ["RODANDO_COM_STREAMLIT"] = "1"
-
-        subprocess.run([
-            sys.executable,
-            "-m",
-            "streamlit",
-            "run",
-            os.path.abspath(__file__),
-        ])
-
-        sys.exit()
-
-
-abrir_com_streamlit()
-
+from pathlib import Path
 
 import streamlit as st
 
@@ -31,8 +10,8 @@ st.set_page_config(
     layout="centered",
 )
 
-
 TOTAL_QUESTOES = 10
+PASTA_NOTAS = Path(__file__).resolve().parent / "Imagens&Gifs" / "Notas"
 FRUTAS = ["🍎", "🍌", "🍇", "🍊", "🍓", "⭐"]
 MENSAGENS_ACERTO = [
     "Muito bem! Você acertou! 🎉",
@@ -487,6 +466,8 @@ def iniciar_estado():
         "operacao": "Todas",
         "nivel": "Fácil",
         "modo_basico": "Números",
+        "imagem_notas": [],
+        "nota_expressao": "",
         "questao_atual": 1,
         "total_questoes": TOTAL_QUESTOES,
         "pontuacao": 0,
@@ -508,7 +489,7 @@ def iniciar_estado():
         "pagina": ["inicio", "quiz", "resultado"],
         "operacao": ["Todas", "Soma", "Subtração", "Multiplicação", "Divisão"],
         "nivel": ["Básico", "Fácil", "Médio", "Difícil"],
-        "modo_basico": ["Números", "Figuras"],
+        "modo_basico": ["Números", "Figuras", "Notas"],
         "modo_resposta": ["alternativas", "digitado"],
         "feedback_tipo": ["", "success", "error"],
     }
@@ -523,6 +504,8 @@ def limpar_questao():
     st.session_state.resposta_correta = 0
     st.session_state.alternativas = []
     st.session_state.modo_resposta = "alternativas"
+    st.session_state.imagem_notas = []
+    st.session_state.nota_expressao = ""
     st.session_state.respondido = False
     st.session_state.feedback_tipo = ""
     st.session_state.feedback_texto = ""
@@ -549,7 +532,10 @@ def iniciar_quiz(operacao, nivel, modo_basico="Números"):
 
 def escolher_operacao(operacao):
     if st.session_state.nivel == "Básico":
-        return random.choice(["Soma", "Subtração"])
+        if operacao == "Todas":
+            return random.choice(["Soma", "Subtração"])
+
+        return operacao
 
     if operacao == "Todas":
         return random.choice(["Soma", "Subtração", "Multiplicação", "Divisão"])
@@ -635,6 +621,49 @@ def montar_enunciado_e_resposta(operacao, a, b):
     return f"Quanto é {a} ÷ {b}?", a // b
 
 
+def caminho_imagem_nota(valor_nota):
+    caminho = PASTA_NOTAS / f"NotaDe{valor_nota}.jpg"
+    return str(caminho) if caminho.exists() else None
+
+
+def montar_enunciado_e_resposta_notas():
+    notas = [2, 5, 10, 20, 50, 100, 200]
+    valor_compra = random.randint(1, 25)
+    usar_duas_notas = random.choice([False, True])
+
+    if not usar_duas_notas:
+        nota = random.choice([nota for nota in notas if nota > valor_compra])
+        resposta = nota - valor_compra
+        imagem_path = caminho_imagem_nota(nota)
+        enunciado = (
+            f"Você comprou algo por <strong>R$ {valor_compra}</strong> e pagou com esta nota de "
+            f"<strong>R$ {nota}</strong>. Quanto deve receber de troco?"
+        )
+        imagens = [imagem_path] if imagem_path else []
+        return enunciado, resposta, imagens, f"Pagamento: R$ {nota}"
+
+    nota1 = random.choice(notas)
+    nota2 = random.choice(notas)
+    total_pago = nota1 + nota2
+    while total_pago <= valor_compra:
+        nota1 = random.choice(notas)
+        nota2 = random.choice(notas)
+        total_pago = nota1 + nota2
+
+    resposta = total_pago - valor_compra
+    enunciado = (
+        f"Você comprou algo por <strong>R$ {valor_compra}</strong> e pagou com estas duas notas. "
+        f"Quanto deve receber de troco?"
+    )
+    imagens = [
+        caminho
+        for caminho in [caminho_imagem_nota(nota1), caminho_imagem_nota(nota2)]
+        if caminho
+    ]
+    nota_expressao = f"Pagamento: R$ {nota1} + R$ {nota2} = R$ {total_pago}"
+    return enunciado, resposta, imagens, nota_expressao
+
+
 def gerar_alternativas(resposta_correta):
     alternativas = {resposta_correta}
 
@@ -659,8 +688,16 @@ def gerar_alternativas(resposta_correta):
 
 def gerar_questao():
     operacao_escolhida = escolher_operacao(st.session_state.operacao)
-    a, b = gerar_valores(operacao_escolhida, st.session_state.nivel)
-    enunciado, resposta = montar_enunciado_e_resposta(operacao_escolhida, a, b)
+
+    if st.session_state.nivel == "Básico" and st.session_state.modo_basico == "Notas":
+        enunciado, resposta, notas_paths, nota_expressao = montar_enunciado_e_resposta_notas()
+        st.session_state.imagem_notas = notas_paths
+        st.session_state.nota_expressao = nota_expressao
+    else:
+        a, b = gerar_valores(operacao_escolhida, st.session_state.nivel)
+        enunciado, resposta = montar_enunciado_e_resposta(operacao_escolhida, a, b)
+        st.session_state.imagem_notas = []
+        st.session_state.nota_expressao = ""
 
     st.session_state.enunciado = enunciado
     st.session_state.resposta_correta = resposta
@@ -798,7 +835,7 @@ def tela_inicio():
         st.markdown('<div class="choice-title">3. Escolha o jeito de brincar</div>', unsafe_allow_html=True)
         modo_basico = st.radio(
             "Como deseja jogar no nível Básico?",
-            ["Números", "Figuras"],
+            ["Números", "Figuras", "Notas"],
             horizontal=True,
             label_visibility="collapsed",
         )
@@ -825,6 +862,11 @@ def tela_quiz():
     if st.session_state.enunciado == "":
         gerar_questao()
 
+    instrucao = "Leia com calma e escolha a resposta que combina com a conta."
+
+    if st.session_state.modo_basico == "Notas":
+        instrucao = "Leia com calma e escolha a resposta correta para o troco."
+
     mostrar_progresso()
 
     col1, col2, col3 = st.columns(3)
@@ -843,11 +885,53 @@ def tela_quiz():
         <div class="question-panel">
             <div class="question-kicker">Pergunta atual</div>
             <div class="question-text">{st.session_state.enunciado}</div>
-            <div class="instruction-text">Leia com calma e escolha a resposta que combina com a conta.</div>
+            <div class="instruction-text">{instrucao}</div>
         </div>
         """,
         unsafe_allow_html=True,
     )
+
+    if st.session_state.modo_basico == "Notas":
+        if len(st.session_state.imagem_notas) == 1:
+            col1, col2, col3 = st.columns([1, 2, 1])
+            with col2:
+                st.image(
+                    st.session_state.imagem_notas[0],
+                    caption="Nota usada para o pagamento",
+                    width=300,
+                )
+        elif len(st.session_state.imagem_notas) == 2:
+            col1, col2, col3, col4, col5 = st.columns([1, 2, 0.4, 2, 1])
+            with col1:
+                st.write("")
+            with col2:
+                st.image(
+                    st.session_state.imagem_notas[0],
+                    caption="Nota 1",
+                    width=250,
+                )
+            with col3:
+                st.markdown(
+                    "<div style='text-align:center; font-size:2.2rem; font-weight:800;'>+</div>",
+                    unsafe_allow_html=True,
+                )
+            with col4:
+                st.image(
+                    st.session_state.imagem_notas[1],
+                    caption="Nota 2",
+                    width=250,
+                )
+            with col5:
+                st.write("")
+        elif st.session_state.nota_expressao:
+            st.markdown(
+                f"""
+                <div style="text-align:center; font-weight:800; font-size:1.35rem; margin:1rem 0;">
+                    {st.session_state.nota_expressao}
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
 
     if not st.session_state.respondido:
         if st.session_state.modo_resposta == "alternativas":

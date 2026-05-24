@@ -164,7 +164,7 @@ O wireframe apresenta as principais telas planejadas para o MVP:
 |---|---|---|
 | Avaliação interna do MVP | Aguardar retorno do professor Harison sobre o vídeo enviado | Em andamento |
 | Ajustes no MVP | Corrigir ou melhorar a aplicação caso o professor solicite alterações | Aguardando retorno |
-| Validação com a Tarso de Coimbra | Entrar em contato com a professora Fabiana para verificar se a aplicação atende à comunidade | Pendente |
+| Validação com a Tarso de Coimbra | Entrar em contato com a professora Fabiana para verificar se a aplicação atende à comunidade | completo |
 | Agendamento da entrega final | Definir data e formato da entrega final com a comunidade parceira | Pendente |
 | Registro final | Atualizar este documento com os resultados da validação e da entrega | Pendente |
 

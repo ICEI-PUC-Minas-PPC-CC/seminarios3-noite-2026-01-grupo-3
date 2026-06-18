@@ -1,76 +1,14 @@
-# 05 — Diário de Bordo do Grupo
+### Entrega presencial — 18/06/2026
 
-> **Grupo:** *(preencher)*  
-> **Aplicação:** *(preencher)*
+**O que foi feito:**  
+Foi realizada a apresentação e entrega presencial da aplicação **Pratique Matemática Básica** para participantes do Centro Municipal de Educação Dr. Tarso de Coimbra, no Laboratório de Informática 6 da PUC Minas, às 14h20.
 
----
+**Quem participou:**  
+Luciano Expedito Franco e Brian Giaccon Vilela participaram presencialmente. João Vitor Geraldo Parussolo participou remotamente por meio do Google Meet. A atividade também contou com participantes da comunidade da Tarso de Coimbra e com o apoio de uma intérprete de Libras.
 
-> **Importante:** Mantenha este diário atualizado ao longo do semestre. Ele será a base para o cronograma do relatório de atividades no APC. Registre **todas** as atividades: reuniões com a comunidade, sessões de desenvolvimento, testes, decisões técnicas, etc.
+**Como ocorreu a apresentação:**  
+João Vitor explicou o projeto, seu processo de desenvolvimento e o funcionamento da aplicação. Luciano auxiliou nas explicações e Brian realizou a demonstração prática do sistema no notebook, apresentando suas telas e funcionalidades.
 
----
+**Resultados:**  
+A aplicação foi apresentada com sucesso, demonstrando os exercícios, níveis de dificuldade, recursos visuais, correção automática e resultado final. O apoio da intérprete de Libras contribuiu para uma comunicação mais acessível com a comunidade.
 
-## Registro de Atividades
-
-### Semana 01 — ___/___/___ a ___/___/___
-
-**O que foi feito:**
-*(Descrever as atividades realizadas nesta semana: desenvolvimento, reuniões, testes, etc.)*
-
-**Quem participou:**
-*(Listar integrantes envolvidos.)*
-
-**Decisões técnicas tomadas:**
-*(Alguma decisão relevante sobre tecnologia, escopo, design, etc.?)*
-
-**Próximos passos:**
-*(O que precisa ser feito na próxima semana?)*
-
----
-
-### Semana 02 — ___/___/___ a ___/___/___
-
-**O que foi feito:**
-
-**Quem participou:**
-
-**Decisões técnicas tomadas:**
-
-**Próximos passos:**
-
----
-
-### Semana 03 — ___/___/___ a ___/___/___
-
-**O que foi feito:**
-
-**Quem participou:**
-
-**Decisões técnicas tomadas:**
-
-**Próximos passos:**
-
----
-
-*(Copie o bloco acima para cada semana de atividade ao longo do semestre.)*
-
----
-
-## Registro da Entrega Presencial
-
-**Data:** ___/___/___  
-**Local:**  
-**Horário:** ___ às ___  
-**Participantes do grupo presentes:**  
-**Nº de participantes da comunidade:**
-
-### Descrição da entrega
-
-(Relatar como foi a entrega: demonstração do software, reação dos usuários, dúvidas que surgiram, etc.)
-
-### Feedback da comunidade
-
-(O que os usuários e responsáveis da comunidade acharam do software?)
-
-### Lições aprendidas
-
-(O que o grupo faria diferente no desenvolvimento? O que deu certo?)

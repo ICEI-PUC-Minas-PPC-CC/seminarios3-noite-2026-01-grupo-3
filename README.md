@@ -1,140 +1,282 @@
-# 💻 Seminários III — Projeto Extensionista
+# 📂 Código-Fonte — Pratique Matemática Básica
 
-> **Disciplina:** Seminários III — PUC Minas  
-> **Professor Responsável:** Harison Herman Silva  
-> **Formato:** Sala de aula invertida (protagonismo dos alunos)
-
----
-
-## 👥 Identificação do Grupo
-
-| Campo | Informação |
-| ------- | ----------- |
-| **Nome do Grupo** | **Grupo 3** |
-| **Integrantes** | **Luciano Expedito Franco**, **João Vitor Geraldo Parussolo**, **Brian Giaccon Vilela** |
-| **E-mail de contato** | **lefranco@sga.pucminas.br** |
-| **Comunidade parceira** | **Centro Municipal de Educação Dr. Tarso de Coimbra** |
+> **Grupo:** Grupo 3
+> **Disciplina:** Seminários III
+> **Comunidade parceira:** Centro Municipal de Educação Dr. Tarso de Coimbra
+> **Tecnologias:** Python e Streamlit
+> **Status:** Aplicação concluída e publicada
 
 ---
 
-## 🎯 Software a Ser Desenvolvido
+## 💻 Sobre a Aplicação
 
-O grupo desenvolverá uma aplicação educacional simples utilizando **Python** e **Streamlit**, com foco no ensino e prática de **operações matemáticas básicas**.
+O **Pratique Matemática Básica** é uma aplicação educacional desenvolvida para auxiliar estudantes na prática das quatro operações matemáticas básicas:
 
-O sistema terá como objetivo trabalhar conteúdos de:
+* soma;
+* subtração;
+* multiplicação;
+* divisão.
 
-- soma
-- subtração
-- multiplicação
-- divisão
+A aplicação possui interface simples, visual e intuitiva, com diferentes níveis de dificuldade, correção automática, feedback imediato e apresentação do desempenho final.
 
-A proposta é criar uma ferramenta com interface simples e acessível, permitindo que o usuário resolva exercícios, receba correção automática e visualize seu desempenho ao final da atividade.
+O sistema foi desenvolvido considerando as necessidades do público atendido pelo Centro Municipal de Educação Dr. Tarso de Coimbra, incluindo usuários com deficiência auditiva ou surdez.
 
-Além disso, o sistema poderá apresentar explicações curtas e orientações básicas de uso, tornando a experiência mais intuitiva para os alunos da comunidade parceira.
-
-O principal objetivo do projeto é oferecer um software educativo direto, funcional e de fácil utilização, contribuindo para o reforço de conteúdos matemáticos fundamentais.
+Por esse motivo, as funcionalidades principais não dependem de áudio e utilizam textos curtos, botões identificáveis, imagens e elementos visuais.
 
 ---
 
-## 📁 Estrutura do Repositório
+## 🌐 Aplicação Publicada
 
-```cmd
-## Estrutura do Repositório
+A aplicação está disponível pela Internet por meio do Streamlit Community Cloud:
 
-├── README.md                                      ← Arquivo principal de apresentação do projeto
-├── .gitignore                                     ← Arquivo de configuração do Git
-├── LICENSE                                        ← Licença do repositório
-├── docs/
-│   ├── 01-termo-autorizacao.md                    ← Termo de autorização e agendamento
-│   ├── 02-documento-requisitos.md                 ← Documento de requisitos do software
-│   ├── 03-plano-desenvolvimento.md                ← Plano e cronograma de desenvolvimento
-│   ├── 04-checklist-logistica.md                  ← Checklist de preparação e logística
-│   ├── 05-diario-bordo.md                         ← Diário de bordo do grupo
-│   ├── 06-registro-contatos.md                    ← Registro de contatos com a comunidade
-│   ├── 08-plano-testes.md                         ← Plano de testes do MVP
-│   └── 09-relatorio-testes.md                     ← Relatório dos testes realizados
-├── src/                                           ← Código-fonte da aplicação
-│   ├── app.py                                     ← Aplicação principal em Python com Streamlit
-│   └── README.md                                  ← Instruções de setup, execução e deploy
-├── evidencias/
-│   ├── fotos/                                     ← Fotos da entrega presencial, quando houver
-│   └── prints/                                    ← Prints de tela da aplicação
-│       ├── README.md                              ← Descrição das evidências visuais
-│       ├── pagina-inicio.png                      ← Tela inicial da aplicação
-│       ├── configuracoes-de-atividades.png        ← Tela de configuração da atividade
-│       ├── niveis.png                             ← Demonstração dos níveis de dificuldade
-│       ├── durante-a-atividade.png                ← Tela durante a resolução do quiz
-│       ├── acerto.png                             ← Exemplo de resposta correta
-│       ├── erro.png                               ← Exemplo de resposta incorreta
-│       ├── final-bom.png                          ← Resultado final com bom desempenho
-│       └── final-ruim.png                         ← Resultado final com baixo desempenho
-└── relatorios/
-    └── 07-relatorio-atividades.md                 ← Base para o relatório APC do grupo
+[**Acessar Pratique Matemática Básica**](https://pratique-matematica-basica-5gyr4nnmabpmxhmhnmyaap.streamlit.app/)
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+| Componente               | Tecnologia                |
+| ------------------------ | ------------------------- |
+| Linguagem de programação | Python                    |
+| Interface web            | Streamlit                 |
+| Editor de código         | Visual Studio Code        |
+| Versionamento            | Git                       |
+| Repositório              | GitHub                    |
+| Hospedagem               | Streamlit Community Cloud |
+| Prototipação             | PowerPoint e Canva        |
+
+---
+
+## 📁 Estrutura do Diretório
+
+```text
+src/
+├── app.py
+├── README.md
+└── Imagens&Gifs/
+    └── Notas/
+        ├── nota-2.png
+        ├── nota-5.png
+        ├── nota-10.png
+        ├── nota-20.png
+        ├── nota-50.png
+        ├── nota-100.png
+        └── nota-200.png
+```
+
+> Os nomes dos arquivos de imagem podem variar conforme a organização atual da pasta.
+
+---
+
+## ✅ Funcionalidades
+
+A aplicação possui as seguintes funcionalidades:
+
+* [x] Tela inicial com orientações;
+* [x] seleção da operação matemática;
+* [x] opção de utilizar todas as operações;
+* [x] exercícios de soma;
+* [x] exercícios de subtração;
+* [x] exercícios de multiplicação;
+* [x] exercícios de divisão;
+* [x] nível Básico;
+* [x] nível Fácil;
+* [x] nível Médio;
+* [x] nível Difícil;
+* [x] questões com alternativas;
+* [x] questões com respostas digitadas;
+* [x] atividades utilizando figuras;
+* [x] atividades utilizando imagens de cédulas;
+* [x] atividades relacionadas a valores monetários;
+* [x] correção automática;
+* [x] feedback visual de acerto ou erro;
+* [x] apresentação da resposta correta;
+* [x] contagem de acertos e erros;
+* [x] cálculo do percentual de aproveitamento;
+* [x] tela de resultado final;
+* [x] opção de refazer a atividade;
+* [x] opção de retornar à tela inicial;
+* [x] funcionamento em navegador;
+* [x] acesso pela Internet.
+
+---
+
+## 🎯 Níveis de Dificuldade
+
+### Básico
+
+O nível Básico foi desenvolvido após o contato com a comunidade parceira.
+
+Ele utiliza:
+
+* números menores;
+* operações simples;
+* alternativas para seleção;
+* maior presença de elementos visuais;
+* atividades com figuras e cédulas.
+
+### Fácil
+
+O nível Fácil apresenta contas simples, com valores um pouco maiores e respostas por alternativas.
+
+### Médio
+
+O nível Médio apresenta operações com maior dificuldade e pode exigir que o usuário digite a resposta.
+
+### Difícil
+
+O nível Difícil utiliza valores maiores e operações mais complexas, mantendo o foco nas quatro operações matemáticas básicas.
+
+---
+
+## ♿ Acessibilidade
+
+A aplicação foi planejada considerando as características do público atendido.
+
+Foram adotadas as seguintes medidas:
+
+* interface visual e intuitiva;
+* textos curtos e objetivos;
+* botões grandes e identificáveis;
+* contraste entre os elementos;
+* feedback visual de acerto e erro;
+* uso de imagens;
+* navegação de baixa complexidade;
+* ausência de dependência de áudio;
+* funcionamento diretamente pelo navegador.
+
+---
+
+## ▶️ Como Executar Localmente
+
+### 1. Clonar o repositório
+
+```bash
+git clone <URL-DO-REPOSITORIO>
+```
+
+### 2. Acessar a pasta do projeto
+
+```bash
+cd seminarios3-noite-2026-01-grupo-3
+```
+
+### 3. Instalar as dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Executar a aplicação
+
+```bash
+streamlit run src/app.py
+```
+
+Após executar o comando, a aplicação será aberta automaticamente no navegador.
+
+Caso não abra, acesse:
+
+```text
+http://localhost:8501
 ```
 
 ---
 
-## 📋 Fluxo de Trabalho
+## 📦 Dependências
 
-Etapa 1 — Formação e Contato Inicial: Preencher o README.md, registrar o contato com a comunidade, levantar demandas em docs/06-registro-contatos.md e preencher o documento inicial em docs/01-termo-autorizacao.md.
+As dependências necessárias estão registradas no arquivo `requirements.txt`, localizado na pasta principal do repositório.
 
-Etapa 2 — Requisitos: Documentar os requisitos do software em docs/02-documento-requisitos.md.
+Dependência principal:
 
-Etapa 3 — Desenvolvimento: Desenvolver a aplicação em src/, seguindo o planejamento definido em docs/03-plano-desenvolvimento.md e registrando o progresso em docs/05-diario-bordo.md.
+```text
+streamlit
+```
 
-Etapa 4 — Entrega Presencial: Realizar a entrega do software presencialmente à comunidade parceira e registrar fotos em evidencias/fotos/.
+---
 
-Etapa 5 — Relatórios: Utilizar relatorios/07-relatorio-atividades.md como base para preenchimento do relatório final no APC.
+## 🧪 Testes Realizados
 
-🛠️ Tecnologias Utilizadas
+Foram realizados testes manuais para verificar:
 
-O grupo optou por utilizar tecnologias simples e adequadas ao escopo do projeto:
+* abertura da aplicação;
+* carregamento das imagens;
+* funcionamento da tela inicial;
+* seleção das operações;
+* seleção dos níveis;
+* geração das questões;
+* funcionamento das alternativas;
+* funcionamento das respostas digitadas;
+* respostas corretas;
+* respostas incorretas;
+* atualização dos acertos e erros;
+* cálculo do aproveitamento;
+* exibição do resultado final;
+* reinício da atividade;
+* retorno à tela inicial;
+* atividades com figuras;
+* atividades com cédulas;
+* funcionamento pelo navegador;
+* acesso pelo link público.
 
-Linguagem principal: Python
+Os testes foram concluídos e as funcionalidades principais foram consideradas operacionais.
 
-Framework: Streamlit
+---
 
-Versionamento: Git e GitHub
+## ☁️ Deploy
 
-Hospedagem prevista: Streamlit Community Cloud
+O deploy foi realizado no **Streamlit Community Cloud**, utilizando o repositório do GitHub.
 
-Essas tecnologias foram escolhidas por permitirem desenvolvimento rápido, interface intuitiva e fácil disponibilização online.
+Configuração principal:
 
-🎯 Escopo do Projeto
+```text
+Arquivo principal: src/app.py
+Arquivo de dependências: requirements.txt
+```
 
-Para garantir a viabilidade do desenvolvimento e a qualidade da entrega, o grupo definiu um escopo mais objetivo e funcional.
+Link da versão publicada:
 
-O sistema contará com:
+https://pratique-matematica-basica-5gyr4nnmabpmxhmhnmyaap.streamlit.app/
 
-tela inicial simples;
+---
 
-exercícios de matemática básica;
+## 👥 Integrantes
 
-entrada de resposta pelo usuário;
+| Integrante                   | Participação principal                                                                       |
+| ---------------------------- | -------------------------------------------------------------------------------------------- |
+| Luciano Expedito Franco      | Organização, documentação, atualização do repositório, apoio no desenvolvimento e validações |
+| João Vitor Geraldo Parussolo | Requisitos, prototipação, desenvolvimento, validação e apresentação do projeto               |
+| Brian Giaccon Vilela         | Desenvolvimento, testes, ajustes e demonstração prática da aplicação                         |
+| Todos                        | Planejamento, decisões, validações, entrega presencial e relatórios                          |
 
-correção automática;
+---
 
-exibição de acertos e erros;
+## 📌 Observações
 
-resultado final da atividade.
+O projeto foi desenvolvido com foco em simplicidade e utilidade.
 
-A proposta é desenvolver uma solução enxuta, mas útil, funcional e adequada à realidade da comunidade parceira.
+Durante o desenvolvimento, o professor sugeriu a inclusão de níveis de dificuldade. Posteriormente, a comunidade parceira indicou a necessidade de um nível ainda mais básico e de maior uso de recursos visuais.
 
-⚠️ Lembretes Importantes
+A partir desses retornos, foram implementados:
 
-O grupo deve manter contato com a comunidade ao longo do semestre.
+* nível Básico;
+* atividades com números menores;
+* questões com figuras;
+* atividades com imagens de cédulas;
+* maior variedade de exercícios visuais.
 
-A entrega do software deve ser presencial.
+---
 
-As evidências fotográficas serão importantes para o relatório final.
+## ✅ Situação Final
 
-O diário de bordo deve ser atualizado durante o desenvolvimento.
+* [x] Código-fonte concluído;
+* [x] funcionalidades implementadas;
+* [x] imagens adicionadas;
+* [x] testes realizados;
+* [x] aplicação publicada;
+* [x] link público funcionando;
+* [x] validação realizada;
+* [x] entrega presencial concluída;
+* [x] documentação atualizada.
 
-O software deverá, preferencialmente, ficar disponível online.
-
-O projeto precisa resultar em um software funcional, com documentação e entrega final realizadas.
-
-✅ Observação Final
-
-O projeto foi planejado com foco em simplicidade, objetividade e utilidade, considerando o tempo disponível do grupo e a necessidade de entregar um sistema funcional e apresentável dentro da proposta da disciplina.
-
+A aplicação **Pratique Matemática Básica** está concluída e disponível para utilização.

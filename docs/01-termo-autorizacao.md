@@ -5,7 +5,7 @@
 - [x] Visualizado
 - [x] Pendente
 - [x] Enviado ao professor
-- [ ] Aprovado  
+- [x] Aprovado  
 
 > **Versão do termo .docx:** [01-termo-autorizacao.docx](https://github.com/user-attachments/files/25936205/01-termo-autorizacao.docx)
 

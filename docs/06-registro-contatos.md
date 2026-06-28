@@ -1,177 +1,323 @@
 # 06 — Registro de Contatos com a Comunidade
 
-> **Grupo:** Grupo 3  
-> **Comunidade parceira:** Centro Municipal de Educação Dr. Tarso de Coimbra  
-> **Projeto:** Sistema para prática de operações matemáticas básicas
+> **Grupo:** Grupo 3
+> **Aplicação:** Pratique Matemática Básica
+> **Comunidade parceira:** Centro Municipal de Educação Dr. Tarso de Coimbra
+> **Integrantes:** Luciano Expedito Franco, João Vitor Geraldo Parussolo e Brian Giaccon Vilela
 
 ---
 
-## 1. Orientações Gerais
-
-Em Seminários III, o grupo deve manter contato com a comunidade ao longo do semestre para levantamento de demandas, validação de protótipos, ajustes na aplicação e organização da entrega final.
-
-Para a comunidade Tarso de Coimbra, os contatos podem ser realizados com apoio da disciplina e dos professores responsáveis. Também há possibilidade de encontros às quintas-feiras, das 14h às 16h20, no Laboratório de Informática 3 da PUC Minas, campus Poços de Caldas.
+> **Importante:** Em Seminários III, o grupo deve manter contato com a comunidade ao longo do semestre para levantamento de demandas, validação de protótipos, acompanhamento do desenvolvimento, realização de ajustes e entrega da aplicação.
 
 ---
 
-## 2. Contatos Realizados
+## 📞 Contato 1 — Levantamento Inicial de Demandas
 
-### Contato #1 — Levantamento inicial da demanda
+> **Data:** 06/03/2026
+> **Forma de contato:** Online
+> **Status:** Concluído
 
-| Campo | Informação |
-|---|---|
-| Data | 06/03/2026 |
-| Forma de contato | Online |
-| Participantes do grupo | Luciano Expedito Franco, João Vitor Geraldo Parussolo e Brian Giaccon Vilela |
-| Participantes da comunidade | Comunidade vinculada à Tarso de Coimbra e responsáveis pela atividade na PUC Minas |
-| Objetivo do contato | Realizar o primeiro contato com a comunidade, compreender o contexto da atividade e levantar demandas iniciais para definição do software a ser desenvolvido |
-| Status | Realizado |
+| Campo                       | Informação                                                                                         |
+| --------------------------- | -------------------------------------------------------------------------------------------------- |
+| Participantes do grupo      | Luciano Expedito Franco, João Vitor Geraldo Parussolo e Brian Giaccon Vilela                       |
+| Participantes da comunidade | Representantes da comunidade vinculada ao Centro Municipal de Educação Dr. Tarso de Coimbra        |
+| Objetivo                    | Conhecer o contexto da comunidade, identificar demandas e definir uma proposta inicial de software |
 
-#### Resumo do que foi tratado
+### Resumo do contato
 
-No primeiro contato, o grupo realizou a aproximação inicial com a comunidade parceira vinculada à Tarso de Coimbra, buscando compreender o contexto de aplicação do projeto extensionista.
+O grupo realizou o contato inicial com a comunidade parceira para compreender o contexto da atividade extensionista e identificar uma proposta de software adequada ao público atendido.
 
-Foram discutidas possibilidades de desenvolvimento de um software simples, útil e viável para a realidade da disciplina e da comunidade atendida. A partir desse levantamento inicial, identificou-se como oportunidade a criação de uma aplicação educacional voltada para o reforço de operações matemáticas básicas.
+Durante o contato, foram discutidas possibilidades de desenvolvimento de uma aplicação simples, útil e de fácil utilização. A partir das informações obtidas, o grupo definiu como proposta a criação de uma aplicação educacional voltada à prática de operações matemáticas básicas.
 
-A proposta definida foi desenvolver uma aplicação com foco em atividades objetivas, interface simples, correção automática e apresentação do desempenho final do usuário.
+### Demandas identificadas
 
-#### Encaminhamentos
+* prática de soma, subtração, multiplicação e divisão;
+* interface simples e intuitiva;
+* textos curtos e objetivos;
+* uso de elementos visuais;
+* botões grandes e identificáveis;
+* correção automática das respostas;
+* feedback imediato de acerto e erro;
+* resultado final com quantidade de acertos e erros;
+* funcionamento sem dependência de áudio;
+* acesso por navegador.
 
-O grupo ficou responsável por:
+### Encaminhamentos
 
-- consolidar a proposta inicial do sistema;
-- registrar as demandas identificadas;
-- estruturar um escopo enxuto para o MVP;
-- elaborar um wireframe de teste da aplicação;
-- seguir para a etapa de desenvolvimento da solução.
-
----
-
-### Contato #2 — Validação intermediária do MVP
-
-| Campo | Informação |
-|---|---|
-| Data | 13/05/2026 |
-| Forma de contato | E-mail |
-| Participantes do grupo | Luciano Expedito Franco — Grupo 3 |
-| Intermediador da comunidade | Professor Harison |
-| Comunidade parceira | Centro Municipal de Educação Dr. Tarso de Coimbra |
-| Material enviado | Vídeo de screencast demonstrando a aplicação |
-| Arquivo enviado | demonstração de aplicação -1.mp4 |
-| Duração aproximada | 2 minutos |
-| Objetivo do contato | Realizar uma primeira avaliação interna do MVP antes da validação direta com a comunidade parceira |
-| Status | Realizado |
-
-#### Orientação recebida
-
-O professor Harison orientou que o grupo realizasse uma primeira avaliação interna por meio do envio de um breve vídeo de screencast, demonstrando o estado atual da aplicação.
-
-Também informou que, após eventuais ajustes solicitados, o grupo deverá entrar em contato com a professora Fabiana, da Tarso de Coimbra, para verificar se a aplicação atende às necessidades da comunidade e alinhar a entrega final.
-
-Segundo a orientação recebida, essa primeira conversa com a professora Fabiana poderá ser online ou presencial. No entanto, a entrega final deverá ocorrer preferencialmente de forma presencial e com a participação do maior número possível de integrantes do grupo.
-
-#### Resposta enviada pelo grupo
-
-Conforme orientação recebida, o Grupo 3 encaminhou ao professor Harison um vídeo de screencast apresentando o estado atual da aplicação.
-
-No vídeo, foram demonstradas as principais funcionalidades já implementadas no MVP, incluindo:
-
-- tela inicial da aplicação;
-- escolha da operação matemática;
-- escolha do nível de dificuldade;
-- início da atividade;
-- resolução das questões;
-- feedback de acerto e erro;
-- exibição do desempenho final;
-- possibilidade de refazer a atividade.
-
-#### Encaminhamentos
-
-Após o retorno do professor Harison, o grupo deverá:
-
-- realizar os ajustes solicitados, caso existam;
-- entrar em contato com a professora Fabiana, da Tarso de Coimbra;
-- validar se a aplicação atende às necessidades da comunidade;
-- alinhar a data e o formato da entrega final;
-- registrar os próximos contatos neste documento.
+* elaborar o documento de requisitos;
+* definir as tecnologias;
+* criar um protótipo inicial;
+* organizar o plano de desenvolvimento;
+* manter contato com a comunidade durante o semestre.
 
 ---
 
-### Contato #3 - Apresentação prévia do projeto
+## 🖥️ Contato 2 — Validação do Wireframe com o Professor
 
-| Campo | Informação |
-|---|---|
-| Data | 18/05/2026 |
-| Forma de contato | Visita à escola |
-| Participantes do grupo | Brian Giaccon Vilela — Grupo 3 |
-| Comunidade parceira | Centro Municipal de Educação Dr. Tarso de Coimbra |
-| Material mostrado | Demonstração da aplicação desenvolvida até o momento |
-| Duração aproximada | 40 minutos |
-| Objetivo do contato | Realizar uma primeira avaliação da aplicação e obter sugestões de melhoria |
-| Status | Realizado |
+> **Período:** Março de 2026
+> **Forma de contato:** E-mail
+> **Status:** Concluído
 
-### Detalhes do contato
+| Campo                      | Informação                                                                     |
+| -------------------------- | ------------------------------------------------------------------------------ |
+| Participantes do grupo     | Luciano Expedito Franco, representando o Grupo 3                               |
+| Responsável pela validação | Professor Harison Herman Silva                                                 |
+| Objetivo                   | Apresentar e validar o wireframe inicial antes do desenvolvimento da aplicação |
 
-Foi realizada uma visita à escola para apresentar uma versão prévia da aplicação desenvolvida. A aplicação foi apresentada à diretora da escola e a dois alunos, para que pudessem testá-la e sugerir melhorias, alterações ou novos recursos que poderiam ser incluídos.
+### Resumo do contato
 
-### Sugestões feitas
+O wireframe da aplicação foi encaminhado ao professor para análise. O protótipo apresentava três telas principais:
 
-- Criação de um nível de dificuldade básico, com operações de soma e subtração utilizando números até 9 e apoio de imagens;
-- Inclusão de mais elementos visuais, como cédulas ilustrativas e GIFs.
+* tela inicial;
+* tela de exercícios;
+* tela de resultado final.
 
-## 4. Materiais de Apoio para Validação
+O professor considerou adequada a proposta de manter a aplicação simples e acessível para o público atendido.
 
-| Material | Descrição | Situação |
-|---|---|---|
-| Wireframe da aplicação | Representação visual inicial das telas principais do sistema | Elaborado |
-| Vídeo de screencast | Demonstração do MVP em funcionamento | Enviado ao professor para avaliação interna |
-| Prints da aplicação | Evidências visuais das telas do sistema | Registrados na pasta de evidências |
+### Sugestão recebida
 
----
+O professor sugeriu a criação de níveis de dificuldade, com:
 
-## 5. Protótipo / Wireframe
+* primeiro módulo contendo contas simples;
+* atividades iniciais com alternativas;
+* progressão gradual da dificuldade;
+* manutenção das quatro operações matemáticas básicas.
 
-O grupo elaborou um wireframe de teste da aplicação com o objetivo de representar visualmente a estrutura inicial do sistema antes da implementação em código.
+### Decisão do grupo
 
-O wireframe apresenta as principais telas planejadas para o MVP:
-
-- tela inicial;
-- tela de resolução de exercícios;
-- tela de resultado final.
+O grupo decidiu manter o wireframe inicial como referência visual e incorporar os níveis de dificuldade durante o desenvolvimento da aplicação.
 
 ### Arquivo do wireframe
 
-- **Apresentação em PDF:** [Wireframes - Grupo3.pdf](https://github.com/user-attachments/files/26030663/Wireframes.-.Grupo3.pdf)
+[Baixar o wireframe do Grupo 3](Wireframes%20-%20Grupo3.pptx)
+
+### Encaminhamentos
+
+* iniciar o desenvolvimento do MVP;
+* implementar níveis de dificuldade;
+* manter a interface simples;
+* utilizar o wireframe como base visual.
 
 ---
 
-## 6. Resumo das Demandas Identificadas
+## 🎥 Contato 3 — Validação Intermediária com o Professor
 
-| Nº | Demanda | Prioridade | Como será atendida no software |
-|---|---|:---:|---|
-| 1 | Prática de operações matemáticas básicas | Alta | O sistema terá exercícios de soma, subtração, multiplicação e divisão |
-| 2 | Interface simples e fácil de usar | Alta | A aplicação será desenvolvida com Streamlit, com navegação direta, layout objetivo e estrutura visual clara |
-| 3 | Correção imediata das respostas | Alta | O usuário receberá correção automática após responder os exercícios |
-| 4 | Visualização do desempenho final | Média | O sistema mostrará quantidade de acertos, erros e aproveitamento final |
-| 5 | Recurso educativo acessível e funcional | Média | O projeto terá escopo enxuto, foco prático e possibilidade de uso em ambiente escolar |
-| 6 | Interface visual e intuitiva | Alta | O sistema seguirá um modelo simples, com telas organizadas, botões bem identificados e pouco texto |
+> **Data:** 13/05/2026
+> **Forma de contato:** Online, por envio de vídeo
+> **Status:** Concluído
+
+| Campo                      | Informação                                                                   |
+| -------------------------- | ---------------------------------------------------------------------------- |
+| Participantes do grupo     | Grupo 3                                                                      |
+| Responsável pela validação | Professor Harison Herman Silva                                               |
+| Objetivo                   | Demonstrar o funcionamento inicial do MVP antes da apresentação à comunidade |
+
+### Resumo do contato
+
+O grupo preparou e enviou ao professor um vídeo demonstrando a versão inicial funcional da aplicação.
+
+Foram apresentadas:
+
+* tela inicial;
+* seleção das operações;
+* níveis de dificuldade;
+* resolução dos exercícios;
+* correção automática;
+* feedback de acerto e erro;
+* contagem de acertos e erros;
+* tela de resultado final.
+
+### Resultado
+
+A aplicação foi considerada adequada para continuidade do desenvolvimento e posterior validação com a comunidade.
+
+### Encaminhamentos
+
+* realizar a apresentação intermediária à comunidade;
+* coletar sugestões dos usuários;
+* registrar as necessidades identificadas;
+* ajustar a aplicação antes da entrega final.
 
 ---
 
-## 7. Próximos Passos
+## 🏫 Contato 4 — Validação Intermediária com a Comunidade
 
-| Etapa | Descrição | Situação |
-|---|---|---|
-| Avaliação interna do MVP | Aguardar retorno do professor Harison sobre o vídeo enviado | Em andamento |
-| Ajustes no MVP | Corrigir ou melhorar a aplicação caso o professor solicite alterações | Aguardando retorno |
-| Validação com a Tarso de Coimbra | Entrar em contato com a professora Fabiana para verificar se a aplicação atende à comunidade | completo |
-| Agendamento da entrega final | Definir data e formato da entrega final com a comunidade parceira | Pendente |
-| Registro final | Atualizar este documento com os resultados da validação e da entrega | Pendente |
+> **Data:** 18/05/2026
+> **Forma de contato:** Presencial
+> **Local:** Centro Municipal de Educação Dr. Tarso de Coimbra
+> **Duração aproximada:** 40 minutos
+> **Status:** Concluído
+
+| Campo                       | Informação                                                                |
+| --------------------------- | ------------------------------------------------------------------------- |
+| Participantes do grupo      | Representante do Grupo 3                                                  |
+| Participantes da comunidade | Diretora da instituição e dois alunos                                     |
+| Objetivo                    | Apresentar o MVP, observar sua utilização e coletar sugestões de melhoria |
+
+### Resumo do contato
+
+A versão inicial da aplicação foi apresentada à comunidade parceira. Durante a atividade, foram demonstradas as principais funcionalidades do sistema e os participantes puderam conhecer a proposta e interagir com a aplicação.
+
+A apresentação permitiu observar necessidades que não estavam totalmente previstas no início do projeto.
+
+### Sugestões recebidas
+
+* criar um nível ainda mais básico;
+* utilizar números menores nas primeiras atividades;
+* incluir mais imagens;
+* aumentar a presença de elementos visuais;
+* criar exercícios utilizando figuras;
+* adicionar atividades com imagens de cédulas;
+* facilitar a compreensão das questões.
+
+### Ajustes realizados após o contato
+
+* criação do nível Básico;
+* utilização de números menores;
+* inclusão de atividades com figuras;
+* inclusão de imagens de cédulas;
+* criação de atividades relacionadas a valores monetários;
+* melhoria da organização visual da aplicação;
+* ampliação das opções de exercícios.
+
+### Encaminhamentos
+
+* concluir os ajustes;
+* realizar novos testes;
+* publicar a versão final;
+* organizar a entrega presencial.
 
 ---
 
-## 8. Observação Final
+## ✅ Contato 5 — Entrega Presencial do Software
 
-Este documento será atualizado ao longo do semestre, conforme novos contatos forem realizados com a comunidade parceira.
+> **Data:** 18/06/2026
+> **Horário:** 14h20
+> **Forma de contato:** Presencial, com participação híbrida do grupo
+> **Local:** Laboratório de Informática 6 — PUC Minas, campus Poços de Caldas
+> **Status:** Concluído
 
-Os próximos registros deverão incluir a validação com a professora Fabiana, possíveis sugestões de melhoria, ajustes realizados na aplicação e informações sobre a entrega final do software.
+| Campo                              | Informação                                                                          |
+| ---------------------------------- | ----------------------------------------------------------------------------------- |
+| Participantes presenciais do grupo | Luciano Expedito Franco e Brian Giaccon Vilela                                      |
+| Participante remoto do grupo       | João Vitor Geraldo Parussolo, pelo Google Meet                                      |
+| Participantes da comunidade        | Participantes do Centro Municipal de Educação Dr. Tarso de Coimbra                  |
+| Apoio à comunicação                | Intérprete de Libras                                                                |
+| Objetivo                           | Apresentar, demonstrar e entregar a versão final da aplicação à comunidade parceira |
+
+### Resumo do contato
+
+A entrega presencial da aplicação **Pratique Matemática Básica** foi realizada no Laboratório de Informática 6 da PUC Minas.
+
+João Vitor participou remotamente pelo Google Meet e apresentou o projeto, explicando como a aplicação foi desenvolvida e como funcionam suas principais funcionalidades.
+
+Luciano auxiliou durante a apresentação, complementando as explicações sobre os objetivos do projeto, o público atendido e as decisões tomadas durante o desenvolvimento.
+
+Brian realizou a demonstração prática da aplicação no notebook, apresentando:
+
+* tela inicial;
+* escolha da operação;
+* níveis de dificuldade;
+* questões com alternativas;
+* questões com respostas digitadas;
+* atividades com figuras;
+* atividades com cédulas;
+* correção automática;
+* feedback de acerto e erro;
+* tela de resultado final.
+
+A atividade contou com a presença de participantes da Tarso de Coimbra e com o apoio de uma intérprete de Libras, contribuindo para uma comunicação mais acessível.
+
+### Resultados da entrega
+
+* aplicação apresentada à comunidade;
+* processo de desenvolvimento explicado;
+* principais funcionalidades demonstradas;
+* acesso pela Internet apresentado;
+* dúvidas dos participantes esclarecidas;
+* participação dos três integrantes do grupo garantida;
+* comunicação apoiada por intérprete de Libras;
+* entrega presencial concluída;
+* registros fotográficos realizados.
+
+### Encaminhamentos finais
+
+* organizar as dez fotos da entrega;
+* adicionar as fotos em `evidencias/fotos/`;
+* atualizar o diário de bordo;
+* preencher o relatório da Etapa 4;
+* adicionar o relatório em DOCX ou PDF na pasta `docs/`;
+* atualizar o relatório de atividades;
+* finalizar os relatórios no APC;
+* enviar o link final do repositório.
+
+---
+
+## 📋 Resumo das Demandas Identificadas
+
+| #  | Demanda                                          | Prioridade | Como foi atendida                                                                        |
+| -- | ------------------------------------------------ | :--------: | ---------------------------------------------------------------------------------------- |
+| 1  | Prática das quatro operações matemáticas básicas |    Alta    | Foram implementados exercícios de soma, subtração, multiplicação e divisão               |
+| 2  | Interface simples e intuitiva                    |    Alta    | A aplicação foi desenvolvida com navegação direta, textos curtos e botões identificáveis |
+| 3  | Diferentes níveis de dificuldade                 |    Alta    | Foram criados os níveis Básico, Fácil, Médio e Difícil                                   |
+| 4  | Contas simples para usuários iniciantes          |    Alta    | O nível Básico utiliza números menores e atividades mais simples                         |
+| 5  | Questões com alternativas                        |    Alta    | Os níveis iniciais possuem respostas por alternativas                                    |
+| 6  | Questões mais avançadas                          |    Média   | Os níveis superiores utilizam respostas digitadas                                        |
+| 7  | Correção imediata                                |    Alta    | O sistema informa imediatamente se a resposta está correta ou incorreta                  |
+| 8  | Exibição do desempenho                           |    Média   | A aplicação apresenta acertos, erros e percentual de aproveitamento                      |
+| 9  | Maior uso de imagens                             |    Alta    | Foram adicionadas atividades com figuras e imagens de cédulas                            |
+| 10 | Funcionamento sem áudio                          |    Alta    | Todas as funcionalidades podem ser utilizadas sem recursos sonoros                       |
+| 11 | Acesso pela Internet                             |    Alta    | A aplicação foi publicada no Streamlit Community Cloud                                   |
+| 12 | Comunicação acessível na entrega                 |    Alta    | A apresentação contou com o apoio de uma intérprete de Libras                            |
+
+---
+
+## 📎 Materiais e Evidências
+
+* [x] Wireframe elaborado
+* [x] Wireframe validado pelo professor
+* [x] Vídeo de demonstração enviado ao professor
+* [x] MVP apresentado à comunidade
+* [x] Sugestões da comunidade registradas
+* [x] Ajustes implementados
+* [x] Aplicação publicada na Internet
+* [x] Entrega presencial realizada
+* [x] Dez fotos registradas
+* [x] Fotos adicionadas em `evidencias/fotos/`
+* [x] Prints adicionados em `evidencias/prints/`
+* [x] Relatório da entrega incluído em `docs/`
+* [x] Diário de bordo atualizado
+* [x] Relatório de atividades atualizado
+
+---
+
+## 🔗 Links do Projeto
+
+* **Aplicação:** [Pratique Matemática Básica](https://pratique-matematica-basica-5gyr4nnmabpmxhmhnmyaap.streamlit.app/)
+* **Wireframe:** [Wireframes - Grupo3.pptx](Wireframes%20-%20Grupo3.pptx)
+* **Repositório:** [*(https://github.com/ICEI-PUC-Minas-PPC-CC/seminarios3-noite-2026-01-grupo-3.git)
+
+---
+
+## ✅ Situação Final dos Contatos
+
+* [x] Contato inicial realizado
+* [x] Demandas levantadas
+* [x] Protótipo validado pelo professor
+* [x] MVP demonstrado ao professor
+* [x] Validação intermediária realizada com a comunidade
+* [x] Sugestões registradas
+* [x] Ajustes implementados
+* [x] Entrega presencial realizada
+* [x] Evidências registradas
+* [x] Projeto concluído
+
+---
+
+## Observação Final
+
+Os contatos realizados ao longo do semestre foram fundamentais para orientar o desenvolvimento da aplicação.
+
+A validação do professor contribuiu para a inclusão dos níveis de dificuldade. A apresentação intermediária à comunidade permitiu identificar a necessidade de um nível mais básico e de atividades com maior presença de elementos visuais.
+
+A entrega presencial realizada em **18/06/2026** concluiu o processo de desenvolvimento e apresentação da aplicação à comunidade parceira.

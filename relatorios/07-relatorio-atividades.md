@@ -157,7 +157,13 @@ A avaliação final deverá ser complementada após a entrega presencial definit
 
 * [ ] Fotos da entrega final salvas em `evidencias/fotos/`
 
-> **Pendente:** registrar e adicionar as fotos após a entrega presencial definitiva.
+<img width="1280" height="960" alt="imagem06" src="https://github.com/user-attachments/assets/3722cc56-99f0-4706-b52a-ef153b491872" />
+<img width="960" height="1280" alt="imagem07" src="https://github.com/user-attachments/assets/181f32fd-1f3d-4212-bc3c-3facf601a900" />
+<img width="960" height="1280" alt="imagem03" src="https://github.com/user-attachments/assets/a06bdea1-e389-4578-9f77-a992e8f9ccad" />
+
+
+
+
 
 ### Prints de tela da aplicação
 

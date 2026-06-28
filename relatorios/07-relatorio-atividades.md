@@ -208,24 +208,25 @@ A apresentação final também mostrou a importância de planejar a acessibilida
 
 ---
 
-## ✅ Situação Final
+## Situação Final
 
-* [x] Grupo formado;
-* [x] demandas levantadas;
-* [x] requisitos definidos;
-* [x] wireframe criado;
-* [x] protótipo validado;
-* [x] MVP desenvolvido;
-* [x] validação intermediária realizada;
-* [x] sugestões da comunidade implementadas;
-* [x] testes realizados;
-* [x] deploy realizado;
-* [x] aplicação publicada;
-* [x] entrega presencial realizada;
-* [x] fotos e prints organizados;
-* [x] relatório da prática extensionista preenchido;
-* [x] relatório de atividades atualizado;
-* [x] projeto concluído.
+| Item avaliado                                          | Situação  |
+| ------------------------------------------------------ | --------- |
+| Formação e organização do grupo                        | Concluído |
+| Levantamento das demandas da comunidade                | Concluído |
+| Definição dos requisitos do software                   | Concluído |
+| Elaboração e validação do wireframe                    | Concluído |
+| Desenvolvimento do MVP                                 | Concluído |
+| Validação intermediária com o professor e a comunidade | Concluído |
+| Implementação das melhorias sugeridas                  | Concluído |
+| Realização dos testes funcionais                       | Concluído |
+| Publicação da aplicação na Internet                    | Concluído |
+| Entrega presencial do software                         | Concluído |
+| Organização das fotos e prints                         | Concluído |
+| Preenchimento da documentação e dos relatórios         | Concluído |
+
+O projeto foi finalizado conforme o planejamento estabelecido. A aplicação foi desenvolvida, testada, publicada na Internet e apresentada à comunidade parceira, atendendo aos objetivos propostos para a disciplina.
+
 
 
 ### Resultados

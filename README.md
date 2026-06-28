@@ -267,6 +267,15 @@ A partir desses retornos, foram implementados:
 
 ---
 
+## 📄 Registro da Prática de Extensão
+
+O documento com o registro da apresentação, entrega e monitoramento da atividade extensionista está disponível no link abaixo:
+
+[Registro e monitoramento práticas de extensão 1.pdf](https://github.com/user-attachments/files/29441049/Registro.e.monitoramento.praticas.de.extensao.1.pdf)
+
+
+---
+
 ## ✅ Situação Final
 
 * [x] Código-fonte concluído;
